@@ -24,12 +24,11 @@ namespace PimPdvTelas
             leftBorder = new Panel();
             leftBorder.Size = new Size(7, 60);
             pnMenuVertical.Controls.Add(leftBorder);
-
+            //Form
             this.Text = string.Empty;
             this.ControlBox = false;
             this.DoubleBuffered = true;
-
-           this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
         private void ActivateButton(object senderBtn, Color color)
@@ -64,8 +63,12 @@ namespace PimPdvTelas
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114);
             public static Color color4 = Color.FromArgb(95, 77, 221);
-            public static Color color5 = Color.FromArgb(249, 88, 155);
-            public static Color color6 = Color.FromArgb(24, 161, 251);
+            public static Color color5 = Color.FromArgb(77, 121, 255);
+            public static Color color6 = Color.FromArgb(251, 100, 0);
+            public static Color color7 = Color.FromArgb(230, 230, 0);
+            public static Color color8 = Color.FromArgb(0, 0, 0);
+
+
         }
 
         private void DEsativarBotao()
@@ -92,12 +95,17 @@ namespace PimPdvTelas
             AbrirForm(new frmDashboard());
 
             ActivateButton(sender, RGBColors.color1);
+            pnHorizontal.BackColor = RGBColors.color8;
+
+
         }
 
         private void btnProduto_Click(object sender, EventArgs e)
         {
             AbrirForm(new frmProduto());
             ActivateButton(sender, RGBColors.color2);
+            pnHorizontal.BackColor = RGBColors.color7;
+
 
         }
 
@@ -105,6 +113,7 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmColaborador());
             ActivateButton(sender, RGBColors.color3);
+            pnHorizontal.BackColor = RGBColors.color5;
 
         }
 
@@ -113,6 +122,8 @@ namespace PimPdvTelas
             AbrirForm(new frmRelatorio());
 
             ActivateButton(sender, RGBColors.color4);
+            pnHorizontal.BackColor = RGBColors.color6;
+
 
         }
 
@@ -131,7 +142,6 @@ namespace PimPdvTelas
     
 
         }
-
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
