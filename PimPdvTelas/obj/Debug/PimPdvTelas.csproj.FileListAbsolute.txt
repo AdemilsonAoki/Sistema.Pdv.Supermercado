@@ -26,3 +26,4 @@ F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvT
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmLogin.resources
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmProduto.resources

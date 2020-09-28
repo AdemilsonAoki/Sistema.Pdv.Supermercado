@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
+using System.Security;
 using System.Windows.Forms;
 
 using FontAwesome.Sharp;
@@ -18,9 +19,11 @@ namespace PimPdvTelas
             leftBorder = new Panel();
             leftBorder.Size = new Size(7, 60);
             pnMenuVertical.Controls.Add(leftBorder);
+            DesignCustomizado();
             //Form
             this.Text = string.Empty;
             this.ControlBox = false;
+            
             this.DoubleBuffered = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
@@ -91,35 +94,11 @@ namespace PimPdvTelas
             ActivateButton(sender, RGBColors.color1);
             pnHorizontal.BackColor = RGBColors.color8;
 
-
-        }
-
-        private void btnProduto_Click(object sender, EventArgs e)
-        {
-            AbrirForm(new frmProduto());
-            ActivateButton(sender, RGBColors.color2);
-            pnHorizontal.BackColor = RGBColors.color7;
+            lblNomeForms.Text = "Dashboard";
 
 
         }
 
-        private void btnColaborador_Click(object sender, EventArgs e)
-        {
-            AbrirForm(new frmColaborador());
-            ActivateButton(sender, RGBColors.color3);
-            pnHorizontal.BackColor = RGBColors.color5;
-
-        }
-
-        private void btnRelatorio_Click(object sender, EventArgs e)
-        {
-            AbrirForm(new frmRelatorio());
-
-            ActivateButton(sender, RGBColors.color4);
-            pnHorizontal.BackColor = RGBColors.color6;
-
-
-        }
 
         private void btnLogo_Click(object sender, EventArgs e)
         {
@@ -173,6 +152,8 @@ namespace PimPdvTelas
             string colaborador = "Colaborador";
             string dashBoard = "Dashboard";
             string relatorio = "Relatório";
+            string salvar = "Salvar";
+            string pesquisa = "Pesquisa"; 
 
 
 
@@ -185,6 +166,11 @@ namespace PimPdvTelas
                 btnProduto.Text = "";
                 btnRelatorio.Text = "";
                 pnMenuVertical.Width = 70;
+                btnPesquisaColaborador.Text = "";
+                btnPesquisaProduto.Text = "";
+                btnPesquisaRelatorio.Text = "";
+                btnSalvarColaborador.Text = "";
+                btnSalvarProduto.Text = "";
             }
             else
             {
@@ -192,6 +178,11 @@ namespace PimPdvTelas
                 btnHome.Text = dashBoard;
                 btnProduto.Text = produto;
                 btnRelatorio.Text = relatorio;
+                btnPesquisaColaborador.Text = pesquisa;
+                btnPesquisaProduto.Text = pesquisa;
+                btnPesquisaRelatorio.Text = pesquisa;
+                btnSalvarColaborador.Text = salvar;
+                btnSalvarProduto.Text = salvar;
 
                 pnMenuVertical.Width = 200;
             }
@@ -220,6 +211,101 @@ namespace PimPdvTelas
         private void btnMin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void DesignCustomizado()
+        {
+            pnSubMenuColaborador.Visible = false;
+            pnSubMenuRelatorio.Visible = false;
+            pnSubMenuProduto.Visible = false;
+            
+        }
+
+        private void OcultarSubMenu()
+        {
+            if (pnSubMenuColaborador.Visible == true)
+                pnSubMenuColaborador.Visible = false;
+            if (pnSubMenuProduto.Visible == true)
+                pnSubMenuProduto.Visible = false;
+            if (pnSubMenuRelatorio.Visible == true)
+                pnSubMenuRelatorio.Visible = false;
+        }
+        private void showSubMenu(Panel submenu)
+        {
+            if(submenu.Visible == false)
+            {
+                OcultarSubMenu();
+                submenu.Visible = true;
+            }
+            else
+            {
+                submenu.Visible = false;
+            }
+        }
+
+        private void btnProduto_Click_1(object sender, EventArgs e)
+        {
+      
+            ActivateButton(sender, RGBColors.color2);
+            pnHorizontal.BackColor = RGBColors.color7;
+
+            lblNomeForms.Text = "Produto";
+            showSubMenu(pnSubMenuProduto);
+        }
+
+
+
+        private void btnPesquisaProduto_Click(object sender, EventArgs e)
+        {
+            OcultarSubMenu();
+
+        }
+
+        private void btnSalvarProduto_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmProduto());
+
+            OcultarSubMenu();
+
+        }
+
+        private void btnColaborador_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender, RGBColors.color3);
+            pnHorizontal.BackColor = RGBColors.color5;
+            lblNomeForms.Text = "Colaborador";
+            showSubMenu(pnSubMenuColaborador);
+        }
+
+        private void btnSalvarColaborador_Click_1(object sender, EventArgs e)
+        {
+            AbrirForm(new frmColaborador());
+
+            OcultarSubMenu();
+
+        }
+
+        private void btnPesquisaColaborador_Click(object sender, EventArgs e)
+        {
+            OcultarSubMenu();
+
+        }
+
+        private void btnRelatorio_Click(object sender, EventArgs e)
+        {
+
+            ActivateButton(sender, RGBColors.color4);
+            pnHorizontal.BackColor = RGBColors.color6;
+            lblNomeForms.Text = "Relatório";
+            showSubMenu(pnSubMenuRelatorio);
+        }
+
+        private void btnPesquisaRelatorio_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmRelatorio());
+
+            OcultarSubMenu();
+
         }
     }
 }
