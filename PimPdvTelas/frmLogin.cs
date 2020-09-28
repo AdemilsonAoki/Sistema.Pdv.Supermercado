@@ -21,5 +21,65 @@ namespace PimPdvTelas
         {
 
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+      
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void txbUsuario_Enter(object sender, EventArgs e)
+        {
+            if(txbUsuario.Text == "USUARIO")
+            {
+                txbUsuario.Text = "";
+                txbUsuario.ForeColor = Color.LightGray;
+            }
+        }
+
+        private void txbUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txbUsuario.Text == "")
+            {
+                txbUsuario.Text = "USUARIO";
+                txbUsuario.ForeColor = Color.DimGray;
+            }
+        }
+
+        private void txbSenha_Enter(object sender, EventArgs e)
+        {
+            if (txbSenha.Text == "SENHA")
+            {
+                txbSenha.Text = "";
+                txbSenha.ForeColor = Color.LightGray;
+                txbSenha.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txbSenha_Leave(object sender, EventArgs e)
+        {
+            if (txbSenha.Text == "")
+            {
+                txbSenha.Text = "SENHA";
+                txbSenha.ForeColor = Color.DimGray;
+                txbSenha.UseSystemPasswordChar = false;
+
+
+            }
+        }
+
+        private void frmLogin_MouseDown(object sender, MouseEventArgs e)
+        {
+         
+            MoverForm.ReleaseCapture();
+            MoverForm.SendMessage(this.Handle, 0x112, 0xf012, 0);
+
+        }
     }
 }
