@@ -95,6 +95,7 @@ namespace PimPdvTelas
             pnHorizontal.BackColor = RGBColors.color8;
 
             lblNomeForms.Text = "Dashboard";
+            OcultarSubMenu();
 
 
         }
@@ -234,7 +235,7 @@ namespace PimPdvTelas
         {
             if(submenu.Visible == false)
             {
-                OcultarSubMenu();
+                //OcultarSubMenu();
                 submenu.Visible = true;
             }
             else
