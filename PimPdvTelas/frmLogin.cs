@@ -16,5 +16,10 @@ namespace PimPdvTelas
         {
             InitializeComponent();
         }
+
+        private void lineShape1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -135,11 +135,13 @@ namespace PimPdvTelas
 
         private void Reset()
         {
-            DEsativarBotao();
-            leftBorder.Visible = false;
-            iconFilho.IconChar = iconButton.IconChar;
-            iconFilho.IconColor = Color.White;
-    
+            if (iconFilho != null)
+            {
+                DEsativarBotao();
+                leftBorder.Visible = false;
+                iconFilho.IconChar = IconChar.Home;
+                iconFilho.IconColor = Color.White;
+            }
 
         }
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

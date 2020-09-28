@@ -37,13 +37,13 @@
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.pictBoxLogo = new System.Windows.Forms.PictureBox();
             this.pnHorizontal = new System.Windows.Forms.Panel();
+            this.btnMax = new FontAwesome.Sharp.IconButton();
+            this.btnMin = new FontAwesome.Sharp.IconButton();
+            this.btnClose = new System.Windows.Forms.Button();
             this.lblNomeForms = new System.Windows.Forms.Label();
             this.iconMenu = new FontAwesome.Sharp.IconPictureBox();
             this.iconFilho = new FontAwesome.Sharp.IconPictureBox();
             this.pnForm = new System.Windows.Forms.Panel();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.btnMin = new FontAwesome.Sharp.IconButton();
-            this.btnMax = new FontAwesome.Sharp.IconButton();
             this.pnMenuVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictBoxLogo)).BeginInit();
@@ -200,6 +200,55 @@
             this.pnHorizontal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnHorizontal_Paint);
             this.pnHorizontal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnHorizontal_MouseDown);
             // 
+            // btnMax
+            // 
+            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMax.FlatAppearance.BorderSize = 0;
+            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMax.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMax.IconChar = FontAwesome.Sharp.IconChar.Square;
+            this.btnMax.IconColor = System.Drawing.Color.White;
+            this.btnMax.IconSize = 16;
+            this.btnMax.Location = new System.Drawing.Point(1033, 16);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.Rotation = 0D;
+            this.btnMax.Size = new System.Drawing.Size(26, 23);
+            this.btnMax.TabIndex = 6;
+            this.btnMax.UseVisualStyleBackColor = true;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
+            // 
+            // btnMin
+            // 
+            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMin.FlatAppearance.BorderSize = 0;
+            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMin.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.btnMin.IconColor = System.Drawing.Color.White;
+            this.btnMin.IconSize = 16;
+            this.btnMin.Location = new System.Drawing.Point(1011, 16);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.Rotation = 0D;
+            this.btnMin.Size = new System.Drawing.Size(16, 23);
+            this.btnMin.TabIndex = 5;
+            this.btnMin.UseVisualStyleBackColor = true;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
+            // 
+            // btnClose
+            // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(1064, 12);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(24, 23);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "X";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // lblNomeForms
             // 
             this.lblNomeForms.AutoSize = true;
@@ -241,55 +290,6 @@
             this.pnForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnForm.Size = new System.Drawing.Size(1100, 811);
             this.pnForm.TabIndex = 2;
-            // 
-            // btnClose
-            // 
-            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClose.FlatAppearance.BorderSize = 0;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1064, 12);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(24, 23);
-            this.btnClose.TabIndex = 3;
-            this.btnClose.Text = "X";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnMin
-            // 
-            this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMin.FlatAppearance.BorderSize = 0;
-            this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnMin.IconChar = FontAwesome.Sharp.IconChar.Minus;
-            this.btnMin.IconColor = System.Drawing.Color.White;
-            this.btnMin.IconSize = 16;
-            this.btnMin.Location = new System.Drawing.Point(1011, 16);
-            this.btnMin.Name = "btnMin";
-            this.btnMin.Rotation = 0D;
-            this.btnMin.Size = new System.Drawing.Size(16, 23);
-            this.btnMin.TabIndex = 5;
-            this.btnMin.UseVisualStyleBackColor = true;
-            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
-            // 
-            // btnMax
-            // 
-            this.btnMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMax.FlatAppearance.BorderSize = 0;
-            this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMax.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnMax.IconChar = FontAwesome.Sharp.IconChar.Square;
-            this.btnMax.IconColor = System.Drawing.Color.White;
-            this.btnMax.IconSize = 16;
-            this.btnMax.Location = new System.Drawing.Point(1033, 16);
-            this.btnMax.Name = "btnMax";
-            this.btnMax.Rotation = 0D;
-            this.btnMax.Size = new System.Drawing.Size(26, 23);
-            this.btnMax.TabIndex = 6;
-            this.btnMax.UseVisualStyleBackColor = true;
-            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
             // frmMenuTeste
             // 
