@@ -79,7 +79,7 @@
             this.pnMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenuVertical.Location = new System.Drawing.Point(0, 0);
             this.pnMenuVertical.Name = "pnMenuVertical";
-            this.pnMenuVertical.Size = new System.Drawing.Size(200, 452);
+            this.pnMenuVertical.Size = new System.Drawing.Size(200, 611);
             this.pnMenuVertical.TabIndex = 0;
             // 
             // pnSubMenuRelatorio
@@ -89,7 +89,7 @@
             this.pnSubMenuRelatorio.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubMenuRelatorio.Location = new System.Drawing.Point(0, 520);
             this.pnSubMenuRelatorio.Name = "pnSubMenuRelatorio";
-            this.pnSubMenuRelatorio.Size = new System.Drawing.Size(183, 53);
+            this.pnSubMenuRelatorio.Size = new System.Drawing.Size(200, 53);
             this.pnSubMenuRelatorio.TabIndex = 13;
             // 
             // btnPesquisaRelatorio
@@ -108,7 +108,7 @@
             this.btnPesquisaRelatorio.Name = "btnPesquisaRelatorio";
             this.btnPesquisaRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPesquisaRelatorio.Rotation = 0D;
-            this.btnPesquisaRelatorio.Size = new System.Drawing.Size(183, 53);
+            this.btnPesquisaRelatorio.Size = new System.Drawing.Size(200, 53);
             this.btnPesquisaRelatorio.TabIndex = 7;
             this.btnPesquisaRelatorio.Text = "Pesquisa";
             this.btnPesquisaRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +132,7 @@
             this.btnRelatorio.Name = "btnRelatorio";
             this.btnRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnRelatorio.Rotation = 0D;
-            this.btnRelatorio.Size = new System.Drawing.Size(183, 60);
+            this.btnRelatorio.Size = new System.Drawing.Size(200, 60);
             this.btnRelatorio.TabIndex = 12;
             this.btnRelatorio.Text = "Relatório";
             this.btnRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -148,7 +148,7 @@
             this.pnSubMenuColaborador.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubMenuColaborador.Location = new System.Drawing.Point(0, 344);
             this.pnSubMenuColaborador.Name = "pnSubMenuColaborador";
-            this.pnSubMenuColaborador.Size = new System.Drawing.Size(183, 116);
+            this.pnSubMenuColaborador.Size = new System.Drawing.Size(200, 116);
             this.pnSubMenuColaborador.TabIndex = 10;
             // 
             // btnPesquisaColaborador
@@ -167,7 +167,7 @@
             this.btnPesquisaColaborador.Name = "btnPesquisaColaborador";
             this.btnPesquisaColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPesquisaColaborador.Rotation = 0D;
-            this.btnPesquisaColaborador.Size = new System.Drawing.Size(183, 63);
+            this.btnPesquisaColaborador.Size = new System.Drawing.Size(200, 63);
             this.btnPesquisaColaborador.TabIndex = 9;
             this.btnPesquisaColaborador.Text = "Pesquisa";
             this.btnPesquisaColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +191,7 @@
             this.btnSalvarColaborador.Name = "btnSalvarColaborador";
             this.btnSalvarColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnSalvarColaborador.Rotation = 0D;
-            this.btnSalvarColaborador.Size = new System.Drawing.Size(183, 60);
+            this.btnSalvarColaborador.Size = new System.Drawing.Size(200, 60);
             this.btnSalvarColaborador.TabIndex = 8;
             this.btnSalvarColaborador.Text = "Salvar";
             this.btnSalvarColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +215,7 @@
             this.btnColaborador.Name = "btnColaborador";
             this.btnColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnColaborador.Rotation = 0D;
-            this.btnColaborador.Size = new System.Drawing.Size(183, 60);
+            this.btnColaborador.Size = new System.Drawing.Size(200, 60);
             this.btnColaborador.TabIndex = 11;
             this.btnColaborador.Text = "Colaborador";
             this.btnColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,7 +231,7 @@
             this.pnSubMenuProduto.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubMenuProduto.Location = new System.Drawing.Point(0, 170);
             this.pnSubMenuProduto.Name = "pnSubMenuProduto";
-            this.pnSubMenuProduto.Size = new System.Drawing.Size(183, 114);
+            this.pnSubMenuProduto.Size = new System.Drawing.Size(200, 114);
             this.pnSubMenuProduto.TabIndex = 4;
             // 
             // btnSalvarProduto
@@ -250,7 +250,7 @@
             this.btnSalvarProduto.Name = "btnSalvarProduto";
             this.btnSalvarProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnSalvarProduto.Rotation = 0D;
-            this.btnSalvarProduto.Size = new System.Drawing.Size(183, 49);
+            this.btnSalvarProduto.Size = new System.Drawing.Size(200, 49);
             this.btnSalvarProduto.TabIndex = 9;
             this.btnSalvarProduto.Text = "Salvar";
             this.btnSalvarProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,7 +274,7 @@
             this.btnPesquisaProduto.Name = "btnPesquisaProduto";
             this.btnPesquisaProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPesquisaProduto.Rotation = 0D;
-            this.btnPesquisaProduto.Size = new System.Drawing.Size(183, 44);
+            this.btnPesquisaProduto.Size = new System.Drawing.Size(200, 44);
             this.btnPesquisaProduto.TabIndex = 7;
             this.btnPesquisaProduto.Text = "Pesquisa";
             this.btnPesquisaProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,7 +298,7 @@
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnProduto.Rotation = 0D;
-            this.btnProduto.Size = new System.Drawing.Size(183, 60);
+            this.btnProduto.Size = new System.Drawing.Size(200, 60);
             this.btnProduto.TabIndex = 3;
             this.btnProduto.Text = "Produto";
             this.btnProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +333,7 @@
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnHome.Rotation = 0D;
-            this.btnHome.Size = new System.Drawing.Size(183, 60);
+            this.btnHome.Size = new System.Drawing.Size(200, 60);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Dashboard";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,7 +346,7 @@
             this.pictBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictBoxLogo.Location = new System.Drawing.Point(0, 0);
             this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(183, 50);
+            this.pictBoxLogo.Size = new System.Drawing.Size(200, 50);
             this.pictBoxLogo.TabIndex = 0;
             this.pictBoxLogo.TabStop = false;
             // 
@@ -362,7 +362,7 @@
             this.pnHorizontal.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnHorizontal.Location = new System.Drawing.Point(200, 0);
             this.pnHorizontal.Name = "pnHorizontal";
-            this.pnHorizontal.Size = new System.Drawing.Size(1100, 50);
+            this.pnHorizontal.Size = new System.Drawing.Size(884, 50);
             this.pnHorizontal.TabIndex = 1;
             this.pnHorizontal.Paint += new System.Windows.Forms.PaintEventHandler(this.pnHorizontal_Paint);
             this.pnHorizontal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnHorizontal_MouseDown);
@@ -376,7 +376,7 @@
             this.btnMax.IconChar = FontAwesome.Sharp.IconChar.Square;
             this.btnMax.IconColor = System.Drawing.Color.White;
             this.btnMax.IconSize = 16;
-            this.btnMax.Location = new System.Drawing.Point(1033, 16);
+            this.btnMax.Location = new System.Drawing.Point(817, 16);
             this.btnMax.Name = "btnMax";
             this.btnMax.Rotation = 0D;
             this.btnMax.Size = new System.Drawing.Size(26, 23);
@@ -393,7 +393,7 @@
             this.btnMin.IconChar = FontAwesome.Sharp.IconChar.Minus;
             this.btnMin.IconColor = System.Drawing.Color.White;
             this.btnMin.IconSize = 16;
-            this.btnMin.Location = new System.Drawing.Point(1011, 16);
+            this.btnMin.Location = new System.Drawing.Point(795, 16);
             this.btnMin.Name = "btnMin";
             this.btnMin.Rotation = 0D;
             this.btnMin.Size = new System.Drawing.Size(16, 23);
@@ -408,7 +408,7 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.White;
-            this.btnClose.Location = new System.Drawing.Point(1064, 12);
+            this.btnClose.Location = new System.Drawing.Point(848, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(24, 23);
             this.btnClose.TabIndex = 3;
@@ -457,7 +457,7 @@
             this.pnForm.Location = new System.Drawing.Point(200, 50);
             this.pnForm.Name = "pnForm";
             this.pnForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pnForm.Size = new System.Drawing.Size(1100, 402);
+            this.pnForm.Size = new System.Drawing.Size(884, 561);
             this.pnForm.TabIndex = 4;
             // 
             // frmMenuTeste
@@ -465,7 +465,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1300, 452);
+            this.ClientSize = new System.Drawing.Size(1084, 611);
             this.Controls.Add(this.pnForm);
             this.Controls.Add(this.pnHorizontal);
             this.Controls.Add(this.pnMenuVertical);
