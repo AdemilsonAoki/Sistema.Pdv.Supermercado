@@ -28,6 +28,14 @@ namespace PimPdvTelas
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
         }
+        string produto = "Produto";
+        string colaborador = "Colaborador";
+        string dashBoard = "Dashboard";
+        string relatorio = "Relatório";
+        string salvar = "Salvar";
+        string pesquisa = "Pesquisa";
+        string fornecedor = "Fornecedor";
+
         private void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
@@ -94,7 +102,7 @@ namespace PimPdvTelas
             ActivateButton(sender, RGBColors.color1);
             pnHorizontal.BackColor = RGBColors.color8;
 
-            lblNomeForms.Text = "Dashboard";
+            lblNomeForms.Text = dashBoard;
             OcultarSubMenu();
 
 
@@ -149,12 +157,7 @@ namespace PimPdvTelas
 
         private void iconMenu_Click(object sender, EventArgs e)
         {
-            string produto = "Produto";
-            string colaborador = "Colaborador";
-            string dashBoard = "Dashboard";
-            string relatorio = "Relatório";
-            string salvar = "Salvar";
-            string pesquisa = "Pesquisa"; 
+           
 
 
 
@@ -165,25 +168,32 @@ namespace PimPdvTelas
                 btnColaborador.Text = "";
                 btnHome.Text = "";
                 btnProduto.Text = "";
-                btnRelatorio.Text = "";
-                pnMenuVertical.Width = 70;
+                btnRelatorios.Text = "";
                 btnPesquisaColaborador.Text = "";
                 btnPesquisaProduto.Text = "";
                 btnPesquisaRelatorio.Text = "";
+                btnPesquisaFornecedor.Text = "";
                 btnSalvarColaborador.Text = "";
                 btnSalvarProduto.Text = "";
+                btnSalvarFornecedor.Text = "";
+                pnMenuVertical.Width = 70;
+                btnFornecedor.Text = ""; 
+
             }
             else
             {
                 btnColaborador.Text = colaborador;
                 btnHome.Text = dashBoard;
                 btnProduto.Text = produto;
-                btnRelatorio.Text = relatorio;
+                btnRelatorios.Text = relatorio;
                 btnPesquisaColaborador.Text = pesquisa;
                 btnPesquisaProduto.Text = pesquisa;
                 btnPesquisaRelatorio.Text = pesquisa;
                 btnSalvarColaborador.Text = salvar;
                 btnSalvarProduto.Text = salvar;
+                btnFornecedor.Text = fornecedor;
+                btnPesquisaFornecedor.Text = pesquisa;
+                btnSalvarFornecedor.Text = salvar;
 
                 pnMenuVertical.Width = 200;
             }
@@ -219,6 +229,7 @@ namespace PimPdvTelas
             pnSubMenuColaborador.Visible = false;
             pnSubMenuRelatorio.Visible = false;
             pnSubMenuProduto.Visible = false;
+            pnSubMenuFornecedor.Visible = false;
             
         }
 
@@ -229,7 +240,9 @@ namespace PimPdvTelas
             if (pnSubMenuProduto.Visible == true)
                 pnSubMenuProduto.Visible = false;
             if (pnSubMenuRelatorio.Visible == true)
-                pnSubMenuRelatorio.Visible = false;
+                pnSubMenuRelatorio.Visible = false; 
+            if (pnSubMenuFornecedor.Visible == true)
+                pnSubMenuFornecedor.Visible = false;
         }
         private void showSubMenu(Panel submenu)
         {
@@ -250,7 +263,7 @@ namespace PimPdvTelas
             ActivateButton(sender, RGBColors.color2);
             pnHorizontal.BackColor = RGBColors.color7;
 
-            lblNomeForms.Text = "Produto";
+            lblNomeForms.Text = produto;
             showSubMenu(pnSubMenuProduto);
         }
 
@@ -258,15 +271,18 @@ namespace PimPdvTelas
 
         private void btnPesquisaProduto_Click(object sender, EventArgs e)
         {
-            OcultarSubMenu();
+            AbrirForm(new frmPesquisaProduto());
+            lblNomeForms.Text = produto;
+
 
         }
 
         private void btnSalvarProduto_Click(object sender, EventArgs e)
         {
             AbrirForm(new frmProduto());
+            lblNomeForms.Text = produto;
 
-            OcultarSubMenu();
+           
 
         }
 
@@ -274,38 +290,67 @@ namespace PimPdvTelas
         {
             ActivateButton(sender, RGBColors.color3);
             pnHorizontal.BackColor = RGBColors.color5;
-            lblNomeForms.Text = "Colaborador";
+            lblNomeForms.Text = colaborador;
             showSubMenu(pnSubMenuColaborador);
         }
 
         private void btnSalvarColaborador_Click_1(object sender, EventArgs e)
         {
             AbrirForm(new frmColaborador());
+            lblNomeForms.Text = colaborador;
 
-            OcultarSubMenu();
+
+
 
         }
 
         private void btnPesquisaColaborador_Click(object sender, EventArgs e)
         {
-            OcultarSubMenu();
+            AbrirForm(new frmPesquisaColaborador());
+            lblNomeForms.Text = colaborador;
+
+
 
         }
 
-        private void btnRelatorio_Click(object sender, EventArgs e)
+        private void btnRelatorios_Click(object sender, EventArgs e)
         {
-
-            ActivateButton(sender, RGBColors.color4);
-            pnHorizontal.BackColor = RGBColors.color6;
-            lblNomeForms.Text = "Relatório";
+            ActivateButton(sender, RGBColors.color3);
+            pnHorizontal.BackColor = RGBColors.color5;
+            lblNomeForms.Text = relatorio;
             showSubMenu(pnSubMenuRelatorio);
+
         }
 
-        private void btnPesquisaRelatorio_Click(object sender, EventArgs e)
+        private void btnFornecedor_Click(object sender, EventArgs e)
         {
-            AbrirForm(new frmRelatorio());
+            ActivateButton(sender, RGBColors.color3);
+            pnHorizontal.BackColor = RGBColors.color5;
+            lblNomeForms.Text = fornecedor;
+            showSubMenu(pnSubMenuFornecedor);
+        }
 
-            OcultarSubMenu();
+        private void btnSalvarFornecedor_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmFornecedor());
+            lblNomeForms.Text = fornecedor;
+
+
+        }
+
+        private void btnPesquisaFornecedor_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmPesquisaFornecedor());
+            lblNomeForms.Text = fornecedor;
+
+
+        }
+
+        private void btnPesquisaRelatorios_Click(object sender, EventArgs e)
+        {
+            AbrirForm(new frmPesquisaRelatorio());
+            lblNomeForms.Text = relatorio;
+
 
         }
     }

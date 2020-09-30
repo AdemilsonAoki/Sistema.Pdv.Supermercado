@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace PimPdvTelas
 {
-    public partial class frmColaborador : Form
+    public partial class frmPesquisaFornecedor : Form
     {
-        public frmColaborador()
+        public frmPesquisaFornecedor()
         {
             InitializeComponent();
         }
-
-      
     }
 }

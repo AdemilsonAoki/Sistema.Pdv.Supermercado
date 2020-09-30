@@ -27,3 +27,8 @@ F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvT
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmProduto.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmFornecedor.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaColaborador.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaFornecedor.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaProduto.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaRelatorio.resources

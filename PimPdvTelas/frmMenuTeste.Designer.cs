@@ -31,8 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenuTeste));
             this.pnMenuVertical = new System.Windows.Forms.Panel();
             this.pnSubMenuRelatorio = new System.Windows.Forms.Panel();
-            this.btnPesquisaRelatorio = new FontAwesome.Sharp.IconButton();
-            this.btnRelatorio = new FontAwesome.Sharp.IconButton();
+            this.btnPesquisaRelatorios = new FontAwesome.Sharp.IconButton();
+            this.btnRelatorios = new FontAwesome.Sharp.IconButton();
+            this.pnSubMenuFornecedor = new System.Windows.Forms.Panel();
+            this.btnPesquisaFornecedor = new FontAwesome.Sharp.IconButton();
+            this.btnSalvarFornecedor = new FontAwesome.Sharp.IconButton();
+            this.btnFornecedor = new FontAwesome.Sharp.IconButton();
             this.pnSubMenuColaborador = new System.Windows.Forms.Panel();
             this.btnPesquisaColaborador = new FontAwesome.Sharp.IconButton();
             this.btnSalvarColaborador = new FontAwesome.Sharp.IconButton();
@@ -52,8 +56,10 @@
             this.iconMenu = new FontAwesome.Sharp.IconPictureBox();
             this.iconFilho = new FontAwesome.Sharp.IconPictureBox();
             this.pnForm = new System.Windows.Forms.Panel();
+            this.btnPesquisaRelatorio = new FontAwesome.Sharp.IconButton();
             this.pnMenuVertical.SuspendLayout();
             this.pnSubMenuRelatorio.SuspendLayout();
+            this.pnSubMenuFornecedor.SuspendLayout();
             this.pnSubMenuColaborador.SuspendLayout();
             this.pnSubMenuProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).BeginInit();
@@ -61,6 +67,7 @@
             this.pnHorizontal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconFilho)).BeginInit();
+            this.pnForm.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMenuVertical
@@ -68,7 +75,9 @@
             this.pnMenuVertical.AutoScroll = true;
             this.pnMenuVertical.BackColor = System.Drawing.Color.Black;
             this.pnMenuVertical.Controls.Add(this.pnSubMenuRelatorio);
-            this.pnMenuVertical.Controls.Add(this.btnRelatorio);
+            this.pnMenuVertical.Controls.Add(this.btnRelatorios);
+            this.pnMenuVertical.Controls.Add(this.pnSubMenuFornecedor);
+            this.pnMenuVertical.Controls.Add(this.btnFornecedor);
             this.pnMenuVertical.Controls.Add(this.pnSubMenuColaborador);
             this.pnMenuVertical.Controls.Add(this.btnColaborador);
             this.pnMenuVertical.Controls.Add(this.pnSubMenuProduto);
@@ -85,60 +94,143 @@
             // pnSubMenuRelatorio
             // 
             this.pnSubMenuRelatorio.BackColor = System.Drawing.Color.Gray;
-            this.pnSubMenuRelatorio.Controls.Add(this.btnPesquisaRelatorio);
+            this.pnSubMenuRelatorio.Controls.Add(this.btnPesquisaRelatorios);
             this.pnSubMenuRelatorio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSubMenuRelatorio.Location = new System.Drawing.Point(0, 520);
+            this.pnSubMenuRelatorio.Location = new System.Drawing.Point(0, 695);
             this.pnSubMenuRelatorio.Name = "pnSubMenuRelatorio";
-            this.pnSubMenuRelatorio.Size = new System.Drawing.Size(200, 53);
-            this.pnSubMenuRelatorio.TabIndex = 13;
+            this.pnSubMenuRelatorio.Size = new System.Drawing.Size(183, 80);
+            this.pnSubMenuRelatorio.TabIndex = 17;
             // 
-            // btnPesquisaRelatorio
+            // btnPesquisaRelatorios
             // 
-            this.btnPesquisaRelatorio.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnPesquisaRelatorio.FlatAppearance.BorderSize = 0;
-            this.btnPesquisaRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPesquisaRelatorio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnPesquisaRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisaRelatorio.ForeColor = System.Drawing.Color.Silver;
-            this.btnPesquisaRelatorio.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.btnPesquisaRelatorio.IconColor = System.Drawing.Color.DimGray;
-            this.btnPesquisaRelatorio.IconSize = 40;
-            this.btnPesquisaRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisaRelatorio.Location = new System.Drawing.Point(0, 0);
-            this.btnPesquisaRelatorio.Name = "btnPesquisaRelatorio";
-            this.btnPesquisaRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnPesquisaRelatorio.Rotation = 0D;
-            this.btnPesquisaRelatorio.Size = new System.Drawing.Size(200, 53);
-            this.btnPesquisaRelatorio.TabIndex = 7;
-            this.btnPesquisaRelatorio.Text = "Pesquisa";
-            this.btnPesquisaRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisaRelatorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPesquisaRelatorio.UseVisualStyleBackColor = true;
-            this.btnPesquisaRelatorio.Click += new System.EventHandler(this.btnPesquisaRelatorio_Click);
+            this.btnPesquisaRelatorios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPesquisaRelatorios.FlatAppearance.BorderSize = 0;
+            this.btnPesquisaRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisaRelatorios.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnPesquisaRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisaRelatorios.ForeColor = System.Drawing.Color.Silver;
+            this.btnPesquisaRelatorios.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnPesquisaRelatorios.IconColor = System.Drawing.Color.DimGray;
+            this.btnPesquisaRelatorios.IconSize = 40;
+            this.btnPesquisaRelatorios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaRelatorios.Location = new System.Drawing.Point(0, 0);
+            this.btnPesquisaRelatorios.Name = "btnPesquisaRelatorios";
+            this.btnPesquisaRelatorios.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnPesquisaRelatorios.Rotation = 0D;
+            this.btnPesquisaRelatorios.Size = new System.Drawing.Size(183, 53);
+            this.btnPesquisaRelatorios.TabIndex = 15;
+            this.btnPesquisaRelatorios.Text = "Pesquisa";
+            this.btnPesquisaRelatorios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPesquisaRelatorios.UseVisualStyleBackColor = true;
+            this.btnPesquisaRelatorios.Click += new System.EventHandler(this.btnPesquisaRelatorios_Click);
             // 
-            // btnRelatorio
+            // btnRelatorios
             // 
-            this.btnRelatorio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRelatorio.FlatAppearance.BorderSize = 0;
-            this.btnRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRelatorio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorio.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRelatorio.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
-            this.btnRelatorio.IconColor = System.Drawing.Color.White;
-            this.btnRelatorio.IconSize = 40;
-            this.btnRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.Location = new System.Drawing.Point(0, 460);
-            this.btnRelatorio.Name = "btnRelatorio";
-            this.btnRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnRelatorio.Rotation = 0D;
-            this.btnRelatorio.Size = new System.Drawing.Size(200, 60);
-            this.btnRelatorio.TabIndex = 12;
-            this.btnRelatorio.Text = "Relatório";
-            this.btnRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRelatorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRelatorio.UseVisualStyleBackColor = true;
-            this.btnRelatorio.Click += new System.EventHandler(this.btnRelatorio_Click);
+            this.btnRelatorios.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRelatorios.FlatAppearance.BorderSize = 0;
+            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRelatorios.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnRelatorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorios.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRelatorios.IconChar = FontAwesome.Sharp.IconChar.ChartBar;
+            this.btnRelatorios.IconColor = System.Drawing.Color.White;
+            this.btnRelatorios.IconSize = 40;
+            this.btnRelatorios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRelatorios.Location = new System.Drawing.Point(0, 635);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnRelatorios.Rotation = 0D;
+            this.btnRelatorios.Size = new System.Drawing.Size(183, 60);
+            this.btnRelatorios.TabIndex = 16;
+            this.btnRelatorios.Text = "Relatório";
+            this.btnRelatorios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRelatorios.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRelatorios.UseVisualStyleBackColor = true;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            // 
+            // pnSubMenuFornecedor
+            // 
+            this.pnSubMenuFornecedor.BackColor = System.Drawing.Color.Gray;
+            this.pnSubMenuFornecedor.Controls.Add(this.btnPesquisaFornecedor);
+            this.pnSubMenuFornecedor.Controls.Add(this.btnSalvarFornecedor);
+            this.pnSubMenuFornecedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnSubMenuFornecedor.Location = new System.Drawing.Point(0, 520);
+            this.pnSubMenuFornecedor.Name = "pnSubMenuFornecedor";
+            this.pnSubMenuFornecedor.Size = new System.Drawing.Size(183, 115);
+            this.pnSubMenuFornecedor.TabIndex = 15;
+            // 
+            // btnPesquisaFornecedor
+            // 
+            this.btnPesquisaFornecedor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnPesquisaFornecedor.FlatAppearance.BorderSize = 0;
+            this.btnPesquisaFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisaFornecedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnPesquisaFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisaFornecedor.ForeColor = System.Drawing.Color.Silver;
+            this.btnPesquisaFornecedor.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnPesquisaFornecedor.IconColor = System.Drawing.Color.DimGray;
+            this.btnPesquisaFornecedor.IconSize = 40;
+            this.btnPesquisaFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaFornecedor.Location = new System.Drawing.Point(0, 55);
+            this.btnPesquisaFornecedor.Name = "btnPesquisaFornecedor";
+            this.btnPesquisaFornecedor.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnPesquisaFornecedor.Rotation = 0D;
+            this.btnPesquisaFornecedor.Size = new System.Drawing.Size(183, 60);
+            this.btnPesquisaFornecedor.TabIndex = 18;
+            this.btnPesquisaFornecedor.Text = "Pesquisa";
+            this.btnPesquisaFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaFornecedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPesquisaFornecedor.UseVisualStyleBackColor = true;
+            this.btnPesquisaFornecedor.Click += new System.EventHandler(this.btnPesquisaFornecedor_Click);
+            // 
+            // btnSalvarFornecedor
+            // 
+            this.btnSalvarFornecedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSalvarFornecedor.FlatAppearance.BorderSize = 0;
+            this.btnSalvarFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalvarFornecedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnSalvarFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvarFornecedor.ForeColor = System.Drawing.Color.Silver;
+            this.btnSalvarFornecedor.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.btnSalvarFornecedor.IconColor = System.Drawing.Color.DimGray;
+            this.btnSalvarFornecedor.IconSize = 40;
+            this.btnSalvarFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalvarFornecedor.Location = new System.Drawing.Point(0, 0);
+            this.btnSalvarFornecedor.Name = "btnSalvarFornecedor";
+            this.btnSalvarFornecedor.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnSalvarFornecedor.Rotation = 0D;
+            this.btnSalvarFornecedor.Size = new System.Drawing.Size(183, 60);
+            this.btnSalvarFornecedor.TabIndex = 17;
+            this.btnSalvarFornecedor.Text = "Salvar";
+            this.btnSalvarFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalvarFornecedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSalvarFornecedor.UseVisualStyleBackColor = true;
+            this.btnSalvarFornecedor.Click += new System.EventHandler(this.btnSalvarFornecedor_Click);
+            // 
+            // btnFornecedor
+            // 
+            this.btnFornecedor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFornecedor.FlatAppearance.BorderSize = 0;
+            this.btnFornecedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFornecedor.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedor.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnFornecedor.IconChar = FontAwesome.Sharp.IconChar.UserCircle;
+            this.btnFornecedor.IconColor = System.Drawing.Color.White;
+            this.btnFornecedor.IconSize = 40;
+            this.btnFornecedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFornecedor.Location = new System.Drawing.Point(0, 460);
+            this.btnFornecedor.Name = "btnFornecedor";
+            this.btnFornecedor.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnFornecedor.Rotation = 0D;
+            this.btnFornecedor.Size = new System.Drawing.Size(183, 60);
+            this.btnFornecedor.TabIndex = 14;
+            this.btnFornecedor.Text = "Fornecedor";
+            this.btnFornecedor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFornecedor.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFornecedor.UseVisualStyleBackColor = true;
+            this.btnFornecedor.Click += new System.EventHandler(this.btnFornecedor_Click);
             // 
             // pnSubMenuColaborador
             // 
@@ -148,7 +240,7 @@
             this.pnSubMenuColaborador.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubMenuColaborador.Location = new System.Drawing.Point(0, 344);
             this.pnSubMenuColaborador.Name = "pnSubMenuColaborador";
-            this.pnSubMenuColaborador.Size = new System.Drawing.Size(200, 116);
+            this.pnSubMenuColaborador.Size = new System.Drawing.Size(183, 116);
             this.pnSubMenuColaborador.TabIndex = 10;
             // 
             // btnPesquisaColaborador
@@ -163,11 +255,11 @@
             this.btnPesquisaColaborador.IconColor = System.Drawing.Color.DimGray;
             this.btnPesquisaColaborador.IconSize = 40;
             this.btnPesquisaColaborador.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPesquisaColaborador.Location = new System.Drawing.Point(0, 53);
+            this.btnPesquisaColaborador.Location = new System.Drawing.Point(0, 56);
             this.btnPesquisaColaborador.Name = "btnPesquisaColaborador";
             this.btnPesquisaColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPesquisaColaborador.Rotation = 0D;
-            this.btnPesquisaColaborador.Size = new System.Drawing.Size(200, 63);
+            this.btnPesquisaColaborador.Size = new System.Drawing.Size(183, 60);
             this.btnPesquisaColaborador.TabIndex = 9;
             this.btnPesquisaColaborador.Text = "Pesquisa";
             this.btnPesquisaColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -191,7 +283,7 @@
             this.btnSalvarColaborador.Name = "btnSalvarColaborador";
             this.btnSalvarColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnSalvarColaborador.Rotation = 0D;
-            this.btnSalvarColaborador.Size = new System.Drawing.Size(200, 60);
+            this.btnSalvarColaborador.Size = new System.Drawing.Size(183, 60);
             this.btnSalvarColaborador.TabIndex = 8;
             this.btnSalvarColaborador.Text = "Salvar";
             this.btnSalvarColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,7 +307,7 @@
             this.btnColaborador.Name = "btnColaborador";
             this.btnColaborador.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnColaborador.Rotation = 0D;
-            this.btnColaborador.Size = new System.Drawing.Size(200, 60);
+            this.btnColaborador.Size = new System.Drawing.Size(183, 60);
             this.btnColaborador.TabIndex = 11;
             this.btnColaborador.Text = "Colaborador";
             this.btnColaborador.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,7 +323,7 @@
             this.pnSubMenuProduto.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnSubMenuProduto.Location = new System.Drawing.Point(0, 170);
             this.pnSubMenuProduto.Name = "pnSubMenuProduto";
-            this.pnSubMenuProduto.Size = new System.Drawing.Size(200, 114);
+            this.pnSubMenuProduto.Size = new System.Drawing.Size(183, 114);
             this.pnSubMenuProduto.TabIndex = 4;
             // 
             // btnSalvarProduto
@@ -250,7 +342,7 @@
             this.btnSalvarProduto.Name = "btnSalvarProduto";
             this.btnSalvarProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnSalvarProduto.Rotation = 0D;
-            this.btnSalvarProduto.Size = new System.Drawing.Size(200, 49);
+            this.btnSalvarProduto.Size = new System.Drawing.Size(183, 49);
             this.btnSalvarProduto.TabIndex = 9;
             this.btnSalvarProduto.Text = "Salvar";
             this.btnSalvarProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -274,7 +366,7 @@
             this.btnPesquisaProduto.Name = "btnPesquisaProduto";
             this.btnPesquisaProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnPesquisaProduto.Rotation = 0D;
-            this.btnPesquisaProduto.Size = new System.Drawing.Size(200, 44);
+            this.btnPesquisaProduto.Size = new System.Drawing.Size(183, 59);
             this.btnPesquisaProduto.TabIndex = 7;
             this.btnPesquisaProduto.Text = "Pesquisa";
             this.btnPesquisaProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,7 +390,7 @@
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnProduto.Rotation = 0D;
-            this.btnProduto.Size = new System.Drawing.Size(200, 60);
+            this.btnProduto.Size = new System.Drawing.Size(183, 60);
             this.btnProduto.TabIndex = 3;
             this.btnProduto.Text = "Produto";
             this.btnProduto.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -333,7 +425,7 @@
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btnHome.Rotation = 0D;
-            this.btnHome.Size = new System.Drawing.Size(200, 60);
+            this.btnHome.Size = new System.Drawing.Size(183, 60);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Dashboard";
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,7 +438,7 @@
             this.pictBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictBoxLogo.Location = new System.Drawing.Point(0, 0);
             this.pictBoxLogo.Name = "pictBoxLogo";
-            this.pictBoxLogo.Size = new System.Drawing.Size(200, 50);
+            this.pictBoxLogo.Size = new System.Drawing.Size(183, 50);
             this.pictBoxLogo.TabIndex = 0;
             this.pictBoxLogo.TabStop = false;
             // 
@@ -452,6 +544,7 @@
             // 
             this.pnForm.BackColor = System.Drawing.Color.Black;
             this.pnForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pnForm.Controls.Add(this.btnPesquisaRelatorio);
             this.pnForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnForm.ForeColor = System.Drawing.SystemColors.ControlText;
             this.pnForm.Location = new System.Drawing.Point(200, 50);
@@ -459,6 +552,29 @@
             this.pnForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnForm.Size = new System.Drawing.Size(884, 561);
             this.pnForm.TabIndex = 4;
+            // 
+            // btnPesquisaRelatorio
+            // 
+            this.btnPesquisaRelatorio.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnPesquisaRelatorio.FlatAppearance.BorderSize = 0;
+            this.btnPesquisaRelatorio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPesquisaRelatorio.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnPesquisaRelatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisaRelatorio.ForeColor = System.Drawing.Color.Silver;
+            this.btnPesquisaRelatorio.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.btnPesquisaRelatorio.IconColor = System.Drawing.Color.DimGray;
+            this.btnPesquisaRelatorio.IconSize = 40;
+            this.btnPesquisaRelatorio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaRelatorio.Location = new System.Drawing.Point(0, 508);
+            this.btnPesquisaRelatorio.Name = "btnPesquisaRelatorio";
+            this.btnPesquisaRelatorio.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnPesquisaRelatorio.Rotation = 0D;
+            this.btnPesquisaRelatorio.Size = new System.Drawing.Size(884, 53);
+            this.btnPesquisaRelatorio.TabIndex = 14;
+            this.btnPesquisaRelatorio.Text = "Pesquisa";
+            this.btnPesquisaRelatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPesquisaRelatorio.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPesquisaRelatorio.UseVisualStyleBackColor = true;
             // 
             // frmMenuTeste
             // 
@@ -469,6 +585,7 @@
             this.Controls.Add(this.pnForm);
             this.Controls.Add(this.pnHorizontal);
             this.Controls.Add(this.pnMenuVertical);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Name = "frmMenuTeste";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -477,6 +594,7 @@
             this.Load += new System.EventHandler(this.frmMenuTeste_Load);
             this.pnMenuVertical.ResumeLayout(false);
             this.pnSubMenuRelatorio.ResumeLayout(false);
+            this.pnSubMenuFornecedor.ResumeLayout(false);
             this.pnSubMenuColaborador.ResumeLayout(false);
             this.pnSubMenuProduto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnLogo)).EndInit();
@@ -485,6 +603,7 @@
             this.pnHorizontal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconFilho)).EndInit();
+            this.pnForm.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -503,9 +622,6 @@
         private System.Windows.Forms.Button btnClose;
         private FontAwesome.Sharp.IconButton btnMax;
         private System.Windows.Forms.Panel pnForm;
-        private System.Windows.Forms.Panel pnSubMenuRelatorio;
-        private FontAwesome.Sharp.IconButton btnPesquisaRelatorio;
-        private FontAwesome.Sharp.IconButton btnRelatorio;
         private System.Windows.Forms.Panel pnSubMenuColaborador;
         private FontAwesome.Sharp.IconButton btnPesquisaColaborador;
         private FontAwesome.Sharp.IconButton btnSalvarColaborador;
@@ -514,6 +630,14 @@
         private FontAwesome.Sharp.IconButton btnSalvarProduto;
         private FontAwesome.Sharp.IconButton btnPesquisaProduto;
         private FontAwesome.Sharp.IconButton btnProduto;
+        private FontAwesome.Sharp.IconButton btnFornecedor;
+        private FontAwesome.Sharp.IconButton btnPesquisaRelatorio;
+        private System.Windows.Forms.Panel pnSubMenuRelatorio;
+        private FontAwesome.Sharp.IconButton btnRelatorios;
+        private System.Windows.Forms.Panel pnSubMenuFornecedor;
+        private FontAwesome.Sharp.IconButton btnSalvarFornecedor;
+        private FontAwesome.Sharp.IconButton btnPesquisaRelatorios;
+        private FontAwesome.Sharp.IconButton btnPesquisaFornecedor;
     }
 }
 

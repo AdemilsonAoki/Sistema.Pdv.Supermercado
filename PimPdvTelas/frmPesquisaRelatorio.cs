@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace PimPdvTelas
 {
-    public partial class frmRelatorio : Form
+    public partial class frmPesquisaRelatorio : Form
     {
-        public frmRelatorio()
+        public frmPesquisaRelatorio()
         {
             InitializeComponent();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+   
     }
 }
