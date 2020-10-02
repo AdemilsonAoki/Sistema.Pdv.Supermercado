@@ -33,35 +33,33 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblCodBarras = new System.Windows.Forms.Label();
             this.txbCodigoBarras = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblFornecedor = new System.Windows.Forms.Label();
+            this.cmbFornecedor = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbDescrição = new System.Windows.Forms.TextBox();
+            this.rtbDescricao = new System.Windows.Forms.RichTextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txbNome = new System.Windows.Forms.TextBox();
             this.btnGerarCodBarras = new FontAwesome.Sharp.IconButton();
             this.gpCategoria = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbNaoPerecivel = new System.Windows.Forms.RadioButton();
+            this.rbPerecivel = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbMargemDeLucro = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbPrecoDeVenda = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbPrecoCusto = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.lblPrecoCusto = new System.Windows.Forms.Label();
+            this.dtpDataFabricacao = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataVencimento = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnAlterar = new FontAwesome.Sharp.IconButton();
             this.btnAdicionar = new FontAwesome.Sharp.IconButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.rbProdutoInativo = new System.Windows.Forms.RadioButton();
+            this.rbProdutoAtivo = new System.Windows.Forms.RadioButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +67,8 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txbQuantidadeEstoque = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gpCategoria.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -93,33 +93,33 @@
             this.txbCodigoBarras.Size = new System.Drawing.Size(174, 20);
             this.txbCodigoBarras.TabIndex = 1;
             // 
-            // label1
+            // lblFornecedor
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(295, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Fornecedor";
+            this.lblFornecedor.AutoSize = true;
+            this.lblFornecedor.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFornecedor.ForeColor = System.Drawing.Color.Black;
+            this.lblFornecedor.Location = new System.Drawing.Point(295, 18);
+            this.lblFornecedor.Name = "lblFornecedor";
+            this.lblFornecedor.Size = new System.Drawing.Size(83, 15);
+            this.lblFornecedor.TabIndex = 3;
+            this.lblFornecedor.Text = "Fornecedor";
             // 
-            // comboBox1
+            // cmbFornecedor
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cmbFornecedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(298, 36);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(251, 21);
-            this.comboBox1.TabIndex = 4;
+            this.cmbFornecedor.FormattingEnabled = true;
+            this.cmbFornecedor.Location = new System.Drawing.Point(298, 36);
+            this.cmbFornecedor.Name = "cmbFornecedor";
+            this.cmbFornecedor.Size = new System.Drawing.Size(251, 21);
+            this.cmbFornecedor.TabIndex = 4;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txbDescrição);
+            this.groupBox1.Controls.Add(this.rtbDescricao);
+            this.groupBox1.Controls.Add(this.lblNome);
+            this.groupBox1.Controls.Add(this.txbNome);
             this.groupBox1.Location = new System.Drawing.Point(24, 79);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(542, 158);
@@ -137,31 +137,31 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Descrição";
             // 
-            // richTextBox1
+            // rtbDescricao
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 75);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(519, 68);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
+            this.rtbDescricao.Location = new System.Drawing.Point(6, 75);
+            this.rtbDescricao.Name = "rtbDescricao";
+            this.rtbDescricao.Size = new System.Drawing.Size(519, 68);
+            this.rtbDescricao.TabIndex = 13;
+            this.rtbDescricao.Text = "";
             // 
-            // label3
+            // lblNome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 15);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Nome";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.Color.Black;
+            this.lblNome.Location = new System.Drawing.Point(6, 16);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(45, 15);
+            this.lblNome.TabIndex = 12;
+            this.lblNome.Text = "Nome";
             // 
-            // txbDescrição
+            // txbNome
             // 
-            this.txbDescrição.Location = new System.Drawing.Point(6, 34);
-            this.txbDescrição.Name = "txbDescrição";
-            this.txbDescrição.Size = new System.Drawing.Size(519, 20);
-            this.txbDescrição.TabIndex = 11;
+            this.txbNome.Location = new System.Drawing.Point(6, 34);
+            this.txbNome.Name = "txbNome";
+            this.txbNome.Size = new System.Drawing.Size(519, 20);
+            this.txbNome.TabIndex = 11;
             // 
             // btnGerarCodBarras
             // 
@@ -182,8 +182,8 @@
             // gpCategoria
             // 
             this.gpCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gpCategoria.Controls.Add(this.radioButton2);
-            this.gpCategoria.Controls.Add(this.radioButton1);
+            this.gpCategoria.Controls.Add(this.rbNaoPerecivel);
+            this.gpCategoria.Controls.Add(this.rbPerecivel);
             this.gpCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gpCategoria.Location = new System.Drawing.Point(570, 4);
             this.gpCategoria.Name = "gpCategoria";
@@ -191,52 +191,52 @@
             this.gpCategoria.TabIndex = 10;
             this.gpCategoria.TabStop = false;
             // 
-            // radioButton2
+            // rbNaoPerecivel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(7, 40);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(116, 19);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Não Perecível";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbNaoPerecivel.AutoSize = true;
+            this.rbNaoPerecivel.Location = new System.Drawing.Point(7, 40);
+            this.rbNaoPerecivel.Name = "rbNaoPerecivel";
+            this.rbNaoPerecivel.Size = new System.Drawing.Size(116, 19);
+            this.rbNaoPerecivel.TabIndex = 1;
+            this.rbNaoPerecivel.TabStop = true;
+            this.rbNaoPerecivel.Text = "Não Perecível";
+            this.rbNaoPerecivel.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbPerecivel
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 16);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(87, 19);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Perecível";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbPerecivel.AutoSize = true;
+            this.rbPerecivel.Location = new System.Drawing.Point(6, 16);
+            this.rbPerecivel.Name = "rbPerecivel";
+            this.rbPerecivel.Size = new System.Drawing.Size(87, 19);
+            this.rbPerecivel.TabIndex = 0;
+            this.rbPerecivel.TabStop = true;
+            this.rbPerecivel.Text = "Perecível";
+            this.rbPerecivel.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txbMargemDeLucro);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txbPrecoDeVenda);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.txbPrecoCusto);
-            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.lblPrecoCusto);
             this.groupBox2.Location = new System.Drawing.Point(580, 79);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(258, 158);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
-            // textBox2
+            // txbMargemDeLucro
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbMargemDeLucro.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(9, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 20);
-            this.textBox2.TabIndex = 7;
+            this.txbMargemDeLucro.Location = new System.Drawing.Point(9, 84);
+            this.txbMargemDeLucro.Name = "txbMargemDeLucro";
+            this.txbMargemDeLucro.Size = new System.Drawing.Size(224, 20);
+            this.txbMargemDeLucro.TabIndex = 7;
             // 
             // label6
             // 
@@ -249,14 +249,14 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Margem de Lucro";
             // 
-            // textBox1
+            // txbPrecoDeVenda
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbPrecoDeVenda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(9, 134);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(224, 20);
-            this.textBox1.TabIndex = 5;
+            this.txbPrecoDeVenda.Location = new System.Drawing.Point(9, 134);
+            this.txbPrecoDeVenda.Name = "txbPrecoDeVenda";
+            this.txbPrecoDeVenda.Size = new System.Drawing.Size(224, 20);
+            this.txbPrecoDeVenda.TabIndex = 5;
             // 
             // label5
             // 
@@ -278,32 +278,32 @@
             this.txbPrecoCusto.Size = new System.Drawing.Size(224, 20);
             this.txbPrecoCusto.TabIndex = 3;
             // 
-            // label2
+            // lblPrecoCusto
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 15);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Preço de Custo";
+            this.lblPrecoCusto.AutoSize = true;
+            this.lblPrecoCusto.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecoCusto.ForeColor = System.Drawing.Color.Black;
+            this.lblPrecoCusto.Location = new System.Drawing.Point(6, 16);
+            this.lblPrecoCusto.Name = "lblPrecoCusto";
+            this.lblPrecoCusto.Size = new System.Drawing.Size(106, 15);
+            this.lblPrecoCusto.TabIndex = 2;
+            this.lblPrecoCusto.Text = "Preço de Custo";
             // 
-            // dateTimePicker1
+            // dtpDataFabricacao
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 258);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(131, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpDataFabricacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataFabricacao.Location = new System.Drawing.Point(24, 258);
+            this.dtpDataFabricacao.Name = "dtpDataFabricacao";
+            this.dtpDataFabricacao.Size = new System.Drawing.Size(131, 20);
+            this.dtpDataFabricacao.TabIndex = 12;
             // 
-            // dateTimePicker2
+            // dtpDataVencimento
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(188, 258);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(131, 20);
-            this.dateTimePicker2.TabIndex = 13;
+            this.dtpDataVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataVencimento.Location = new System.Drawing.Point(188, 258);
+            this.dtpDataVencimento.Name = "dtpDataVencimento";
+            this.dtpDataVencimento.Size = new System.Drawing.Size(131, 20);
+            this.dtpDataVencimento.TabIndex = 13;
             // 
             // label7
             // 
@@ -369,31 +369,31 @@
             this.btnAdicionar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdicionar.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbProdutoInativo
             // 
-            this.radioButton4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(728, 44);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(124, 19);
-            this.radioButton4.TabIndex = 23;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Produto inativo";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbProdutoInativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbProdutoInativo.AutoSize = true;
+            this.rbProdutoInativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProdutoInativo.Location = new System.Drawing.Point(728, 44);
+            this.rbProdutoInativo.Name = "rbProdutoInativo";
+            this.rbProdutoInativo.Size = new System.Drawing.Size(124, 19);
+            this.rbProdutoInativo.TabIndex = 23;
+            this.rbProdutoInativo.TabStop = true;
+            this.rbProdutoInativo.Text = "Produto inativo";
+            this.rbProdutoInativo.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbProdutoAtivo
             // 
-            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(729, 12);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(113, 19);
-            this.radioButton3.TabIndex = 22;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Produto Ativo";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbProdutoAtivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.rbProdutoAtivo.AutoSize = true;
+            this.rbProdutoAtivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbProdutoAtivo.Location = new System.Drawing.Point(729, 12);
+            this.rbProdutoAtivo.Name = "rbProdutoAtivo";
+            this.rbProdutoAtivo.Size = new System.Drawing.Size(113, 19);
+            this.rbProdutoAtivo.TabIndex = 22;
+            this.rbProdutoAtivo.TabStop = true;
+            this.rbProdutoAtivo.Text = "Produto Ativo";
+            this.rbProdutoAtivo.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -448,26 +448,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(818, 217);
             this.dataGridView1.TabIndex = 24;
             // 
-            // textBox3
-            // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(353, 258);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(213, 20);
-            this.textBox3.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(350, 240);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(160, 15);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Quantidade em estoque";
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Column1";
@@ -510,6 +490,26 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 87;
             // 
+            // txbQuantidadeEstoque
+            // 
+            this.txbQuantidadeEstoque.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbQuantidadeEstoque.Location = new System.Drawing.Point(353, 258);
+            this.txbQuantidadeEstoque.Name = "txbQuantidadeEstoque";
+            this.txbQuantidadeEstoque.Size = new System.Drawing.Size(213, 20);
+            this.txbQuantidadeEstoque.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(350, 240);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(160, 15);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Quantidade em estoque";
+            // 
             // frmProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -517,22 +517,22 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(868, 522);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txbQuantidadeEstoque);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
+            this.Controls.Add(this.rbProdutoInativo);
+            this.Controls.Add(this.rbProdutoAtivo);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDataVencimento);
+            this.Controls.Add(this.dtpDataFabricacao);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gpCategoria);
             this.Controls.Add(this.btnGerarCodBarras);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbFornecedor);
+            this.Controls.Add(this.lblFornecedor);
             this.Controls.Add(this.txbCodigoBarras);
             this.Controls.Add(this.lblCodBarras);
             this.Name = "frmProduto";
@@ -554,34 +554,34 @@
 
         private System.Windows.Forms.Label lblCodBarras;
         private System.Windows.Forms.TextBox txbCodigoBarras;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lblFornecedor;
+        private System.Windows.Forms.ComboBox cmbFornecedor;
         private System.Windows.Forms.GroupBox groupBox1;
         private FontAwesome.Sharp.IconButton btnGerarCodBarras;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbDescrição;
+        private System.Windows.Forms.RichTextBox rtbDescricao;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.GroupBox gpCategoria;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbNaoPerecivel;
+        private System.Windows.Forms.RadioButton rbPerecivel;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbMargemDeLucro;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbPrecoDeVenda;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbPrecoCusto;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label lblPrecoCusto;
+        private System.Windows.Forms.DateTimePicker dtpDataFabricacao;
+        private System.Windows.Forms.DateTimePicker dtpDataVencimento;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private FontAwesome.Sharp.IconButton btnAlterar;
         private FontAwesome.Sharp.IconButton btnAdicionar;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton rbProdutoInativo;
+        private System.Windows.Forms.RadioButton rbProdutoAtivo;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txbQuantidadeEstoque;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

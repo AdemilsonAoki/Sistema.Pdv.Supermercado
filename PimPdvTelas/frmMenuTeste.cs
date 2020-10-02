@@ -55,13 +55,16 @@ namespace PimPdvTelas
                 leftBorder.Visible = true;
                 leftBorder.BringToFront();
 
-                iconFilho.IconChar = iconButton.IconChar;
-                iconFilho.IconColor = color;
+               
 
 
             }
         }
-
+        public void MudaCorIcone(Color color)
+        {
+            iconFilho.IconChar = iconButton.IconChar;
+            iconFilho.IconColor = color;
+        }
         private struct RGBColors
         {
             public static Color color1 = Color.FromArgb(172, 126, 241);
@@ -101,6 +104,8 @@ namespace PimPdvTelas
 
             ActivateButton(sender, RGBColors.color1);
             pnHorizontal.BackColor = RGBColors.color8;
+            MudaCorIcone(RGBColors.color1);
+
 
             lblNomeForms.Text = dashBoard;
             OcultarSubMenu();
@@ -171,7 +176,7 @@ namespace PimPdvTelas
                 btnRelatorios.Text = "";
                 btnPesquisaColaborador.Text = "";
                 btnPesquisaProduto.Text = "";
-                btnPesquisaRelatorio.Text = "";
+                btnPesquisaRelatorios.Text = "";
                 btnPesquisaFornecedor.Text = "";
                 btnSalvarColaborador.Text = "";
                 btnSalvarProduto.Text = "";
@@ -188,7 +193,7 @@ namespace PimPdvTelas
                 btnRelatorios.Text = relatorio;
                 btnPesquisaColaborador.Text = pesquisa;
                 btnPesquisaProduto.Text = pesquisa;
-                btnPesquisaRelatorio.Text = pesquisa;
+                btnPesquisaRelatorios.Text = pesquisa;
                 btnSalvarColaborador.Text = salvar;
                 btnSalvarProduto.Text = salvar;
                 btnFornecedor.Text = fornecedor;
@@ -248,7 +253,7 @@ namespace PimPdvTelas
         {
             if(submenu.Visible == false)
             {
-                //OcultarSubMenu();
+                OcultarSubMenu();
                 submenu.Visible = true;
             }
             else
@@ -259,12 +264,16 @@ namespace PimPdvTelas
 
         private void btnProduto_Click_1(object sender, EventArgs e)
         {
-      
+
+            showSubMenu(pnSubMenuProduto);
+
+
             ActivateButton(sender, RGBColors.color2);
             pnHorizontal.BackColor = RGBColors.color7;
 
-            lblNomeForms.Text = produto;
-            showSubMenu(pnSubMenuProduto);
+           // lblNomeForms.Text = produto;
+           
+      
         }
 
 
@@ -273,7 +282,7 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmPesquisaProduto());
             lblNomeForms.Text = produto;
-
+            MudaCorIcone(RGBColors.color2);
 
         }
 
@@ -281,23 +290,28 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmProduto());
             lblNomeForms.Text = produto;
+            MudaCorIcone(RGBColors.color2);
 
-           
+
+
 
         }
 
         private void btnColaborador_Click(object sender, EventArgs e)
         {
+            showSubMenu(pnSubMenuColaborador);
+
             ActivateButton(sender, RGBColors.color3);
             pnHorizontal.BackColor = RGBColors.color5;
-            lblNomeForms.Text = colaborador;
-            showSubMenu(pnSubMenuColaborador);
+            //lblNomeForms.Text = colaborador;
         }
 
         private void btnSalvarColaborador_Click_1(object sender, EventArgs e)
         {
             AbrirForm(new frmColaborador());
             lblNomeForms.Text = colaborador;
+            MudaCorIcone(RGBColors.color2);
+
 
 
 
@@ -308,6 +322,8 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmPesquisaColaborador());
             lblNomeForms.Text = colaborador;
+            MudaCorIcone(RGBColors.color2);
+
 
 
 
@@ -315,25 +331,28 @@ namespace PimPdvTelas
 
         private void btnRelatorios_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
-            pnHorizontal.BackColor = RGBColors.color5;
-            lblNomeForms.Text = relatorio;
             showSubMenu(pnSubMenuRelatorio);
+
+            ActivateButton(sender, RGBColors.color5);
+            pnHorizontal.BackColor = RGBColors.color5;
+           // lblNomeForms.Text = relatorio;
 
         }
 
         private void btnFornecedor_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color3);
-            pnHorizontal.BackColor = RGBColors.color5;
-            lblNomeForms.Text = fornecedor;
             showSubMenu(pnSubMenuFornecedor);
+
+            ActivateButton(sender, RGBColors.color4);
+            pnHorizontal.BackColor = RGBColors.color5;
+           // lblNomeForms.Text = fornecedor;
         }
 
         private void btnSalvarFornecedor_Click(object sender, EventArgs e)
         {
             AbrirForm(new frmFornecedor());
             lblNomeForms.Text = fornecedor;
+            MudaCorIcone(RGBColors.color4);
 
 
         }
@@ -342,6 +361,8 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmPesquisaFornecedor());
             lblNomeForms.Text = fornecedor;
+            MudaCorIcone(RGBColors.color4);
+
 
 
         }
@@ -350,6 +371,8 @@ namespace PimPdvTelas
         {
             AbrirForm(new frmPesquisaRelatorio());
             lblNomeForms.Text = relatorio;
+            MudaCorIcone(RGBColors.color6);
+
 
 
         }

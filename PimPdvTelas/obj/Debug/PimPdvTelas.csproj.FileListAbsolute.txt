@@ -32,3 +32,4 @@ F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvT
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaFornecedor.resources
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaProduto.resources
 F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmPesquisaRelatorio.resources
+F:\Users\PC\Desktop\Projetos\PimSupermercadoPdv\Sistema.Pdv.Supermercado\PimPdvTelas\obj\Debug\PimPdvTelas.frmTelaPdv.resources
