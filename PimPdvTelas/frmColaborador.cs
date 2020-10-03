@@ -17,6 +17,21 @@ namespace PimPdvTelas
             InitializeComponent();
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailCorporativo_Click(object sender, EventArgs e)
+        {
+
+        }
+
       
     }
 }

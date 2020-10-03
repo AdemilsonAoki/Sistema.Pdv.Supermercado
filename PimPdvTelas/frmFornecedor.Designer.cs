@@ -66,6 +66,8 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.txbId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.gbEndereco.SuspendLayout();
             this.gbDadosForncedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedor)).BeginInit();
@@ -239,6 +241,8 @@
             // 
             this.gbDadosForncedor.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbDadosForncedor.Controls.Add(this.txbId);
+            this.gbDadosForncedor.Controls.Add(this.lblId);
             this.gbDadosForncedor.Controls.Add(this.rbFornecedorInativo);
             this.gbDadosForncedor.Controls.Add(this.rbFornecedorAtivo);
             this.gbDadosForncedor.Controls.Add(this.lblCnpj);
@@ -304,9 +308,9 @@
             // 
             this.txbNomeFantasia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbNomeFantasia.Location = new System.Drawing.Point(15, 34);
+            this.txbNomeFantasia.Location = new System.Drawing.Point(74, 34);
             this.txbNomeFantasia.Name = "txbNomeFantasia";
-            this.txbNomeFantasia.Size = new System.Drawing.Size(781, 20);
+            this.txbNomeFantasia.Size = new System.Drawing.Size(722, 20);
             this.txbNomeFantasia.TabIndex = 11;
             // 
             // lblNomeFantasia
@@ -316,7 +320,7 @@
             this.lblNomeFantasia.AutoSize = true;
             this.lblNomeFantasia.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFantasia.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFantasia.Location = new System.Drawing.Point(12, 16);
+            this.lblNomeFantasia.Location = new System.Drawing.Point(71, 16);
             this.lblNomeFantasia.Name = "lblNomeFantasia";
             this.lblNomeFantasia.Size = new System.Drawing.Size(104, 15);
             this.lblNomeFantasia.TabIndex = 10;
@@ -478,6 +482,24 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 87;
             // 
+            // txbId
+            // 
+            this.txbId.Location = new System.Drawing.Point(8, 33);
+            this.txbId.Name = "txbId";
+            this.txbId.Size = new System.Drawing.Size(54, 20);
+            this.txbId.TabIndex = 43;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.Color.Black;
+            this.lblId.Location = new System.Drawing.Point(6, 15);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(21, 15);
+            this.lblId.TabIndex = 42;
+            this.lblId.Text = "ID";
+            // 
             // frmFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,5 +561,7 @@
         private System.Windows.Forms.RadioButton rbFornecedorAtivo;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txbBairro;
+        private System.Windows.Forms.TextBox txbId;
+        private System.Windows.Forms.Label lblId;
     }
 }
