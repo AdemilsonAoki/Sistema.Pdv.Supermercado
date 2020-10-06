@@ -16,5 +16,10 @@ namespace PimPdvTelas
         {
             InitializeComponent();
         }
+
+        private void frmTelaPdv_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

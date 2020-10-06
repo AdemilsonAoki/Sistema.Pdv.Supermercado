@@ -159,14 +159,14 @@
             this.cmbTipoPesquisa.FormattingEnabled = true;
             this.cmbTipoPesquisa.Location = new System.Drawing.Point(714, 27);
             this.cmbTipoPesquisa.Name = "cmbTipoPesquisa";
-            this.cmbTipoPesquisa.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoPesquisa.Size = new System.Drawing.Size(147, 21);
             this.cmbTipoPesquisa.TabIndex = 32;
             // 
             // txbPesquisa
             // 
             this.txbPesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbPesquisa.Location = new System.Drawing.Point(11, 29);
+            this.txbPesquisa.Location = new System.Drawing.Point(8, 28);
             this.txbPesquisa.Name = "txbPesquisa";
             this.txbPesquisa.Size = new System.Drawing.Size(679, 20);
             this.txbPesquisa.TabIndex = 31;
@@ -178,7 +178,7 @@
             this.lblPesquisa.AutoSize = true;
             this.lblPesquisa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesquisa.ForeColor = System.Drawing.Color.Black;
-            this.lblPesquisa.Location = new System.Drawing.Point(8, 11);
+            this.lblPesquisa.Location = new System.Drawing.Point(5, 10);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(66, 15);
             this.lblPesquisa.TabIndex = 30;

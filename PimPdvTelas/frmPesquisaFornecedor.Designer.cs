@@ -159,14 +159,14 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(714, 28);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(147, 21);
             this.comboBox1.TabIndex = 37;
             // 
             // textBox4
             // 
             this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Location = new System.Drawing.Point(11, 30);
+            this.textBox4.Location = new System.Drawing.Point(8, 29);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(679, 20);
             this.textBox4.TabIndex = 36;
@@ -178,7 +178,7 @@
             this.lblPesquisa.AutoSize = true;
             this.lblPesquisa.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPesquisa.ForeColor = System.Drawing.Color.Black;
-            this.lblPesquisa.Location = new System.Drawing.Point(8, 12);
+            this.lblPesquisa.Location = new System.Drawing.Point(5, 11);
             this.lblPesquisa.Name = "lblPesquisa";
             this.lblPesquisa.Size = new System.Drawing.Size(66, 15);
             this.lblPesquisa.TabIndex = 35;

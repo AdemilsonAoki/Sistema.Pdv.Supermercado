@@ -37,6 +37,8 @@
             this.txbUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.txbId = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
             this.lblId = new System.Windows.Forms.Label();
             this.lblEmailCorporativo = new System.Windows.Forms.Label();
             this.txbEmailCorporativo = new System.Windows.Forms.TextBox();
@@ -53,7 +55,6 @@
             this.lblCpf = new System.Windows.Forms.Label();
             this.txbCodigoBarras = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.cmbDepartamento = new System.Windows.Forms.ComboBox();
             this.gbEndereco = new System.Windows.Forms.GroupBox();
             this.txbNumero = new System.Windows.Forms.TextBox();
             this.lblNumero = new System.Windows.Forms.Label();
@@ -79,7 +80,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAlterar = new FontAwesome.Sharp.IconButton();
             this.btnAdicionar = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.gbDadosColaborador.SuspendLayout();
             this.gpAtivo.SuspendLayout();
             this.gbEndereco.SuspendLayout();
@@ -121,9 +121,9 @@
             // 
             this.txbSenha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbSenha.Location = new System.Drawing.Point(350, 131);
+            this.txbSenha.Location = new System.Drawing.Point(350, 132);
             this.txbSenha.Name = "txbSenha";
-            this.txbSenha.Size = new System.Drawing.Size(239, 20);
+            this.txbSenha.Size = new System.Drawing.Size(173, 20);
             this.txbSenha.TabIndex = 45;
             this.txbSenha.UseSystemPasswordChar = true;
             // 
@@ -134,7 +134,7 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.Color.Black;
-            this.lblSenha.Location = new System.Drawing.Point(347, 113);
+            this.lblSenha.Location = new System.Drawing.Point(347, 112);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(48, 15);
             this.lblSenha.TabIndex = 44;
@@ -144,9 +144,9 @@
             // 
             this.txbUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbUsuario.Location = new System.Drawing.Point(350, 86);
+            this.txbUsuario.Location = new System.Drawing.Point(350, 83);
             this.txbUsuario.Name = "txbUsuario";
-            this.txbUsuario.Size = new System.Drawing.Size(239, 20);
+            this.txbUsuario.Size = new System.Drawing.Size(173, 20);
             this.txbUsuario.TabIndex = 43;
             // 
             // lblUsuario
@@ -170,12 +170,34 @@
             this.txbId.TabIndex = 41;
             this.txbId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(592, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(101, 15);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Departamento";
+            // 
+            // cmbDepartamento
+            // 
+            this.cmbDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbDepartamento.FormattingEnabled = true;
+            this.cmbDepartamento.Location = new System.Drawing.Point(595, 88);
+            this.cmbDepartamento.Name = "cmbDepartamento";
+            this.cmbDepartamento.Size = new System.Drawing.Size(175, 21);
+            this.cmbDepartamento.TabIndex = 38;
+            this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
+            // 
             // lblId
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblId.ForeColor = System.Drawing.Color.Black;
-            this.lblId.Location = new System.Drawing.Point(6, 13);
+            this.lblId.Location = new System.Drawing.Point(6, 16);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(21, 15);
             this.lblId.TabIndex = 40;
@@ -186,7 +208,7 @@
             this.lblEmailCorporativo.AutoSize = true;
             this.lblEmailCorporativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailCorporativo.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailCorporativo.Location = new System.Drawing.Point(3, 113);
+            this.lblEmailCorporativo.Location = new System.Drawing.Point(6, 114);
             this.lblEmailCorporativo.Name = "lblEmailCorporativo";
             this.lblEmailCorporativo.Size = new System.Drawing.Size(129, 15);
             this.lblEmailCorporativo.TabIndex = 37;
@@ -195,9 +217,9 @@
             // 
             // txbEmailCorporativo
             // 
-            this.txbEmailCorporativo.Location = new System.Drawing.Point(6, 132);
+            this.txbEmailCorporativo.Location = new System.Drawing.Point(9, 132);
             this.txbEmailCorporativo.Name = "txbEmailCorporativo";
-            this.txbEmailCorporativo.Size = new System.Drawing.Size(324, 20);
+            this.txbEmailCorporativo.Size = new System.Drawing.Size(321, 20);
             this.txbEmailCorporativo.TabIndex = 36;
             // 
             // lblEmail
@@ -205,7 +227,7 @@
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(3, 69);
+            this.lblEmail.Location = new System.Drawing.Point(6, 67);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(51, 15);
             this.lblEmail.TabIndex = 35;
@@ -213,7 +235,7 @@
             // 
             // txbEmail
             // 
-            this.txbEmail.Location = new System.Drawing.Point(6, 86);
+            this.txbEmail.Location = new System.Drawing.Point(6, 83);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(324, 20);
             this.txbEmail.TabIndex = 34;
@@ -224,7 +246,7 @@
             this.lblCelular.AutoSize = true;
             this.lblCelular.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCelular.ForeColor = System.Drawing.Color.Black;
-            this.lblCelular.Location = new System.Drawing.Point(372, 11);
+            this.lblCelular.Location = new System.Drawing.Point(369, 14);
             this.lblCelular.Name = "lblCelular";
             this.lblCelular.Size = new System.Drawing.Size(55, 15);
             this.lblCelular.TabIndex = 31;
@@ -234,7 +256,7 @@
             // 
             this.mskTxtCelular.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.mskTxtCelular.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTxtCelular.Location = new System.Drawing.Point(375, 28);
+            this.mskTxtCelular.Location = new System.Drawing.Point(372, 29);
             this.mskTxtCelular.Mask = "(99) 00000-0000";
             this.mskTxtCelular.Name = "mskTxtCelular";
             this.mskTxtCelular.Size = new System.Drawing.Size(107, 22);
@@ -246,7 +268,7 @@
             this.lblCargo.AutoSize = true;
             this.lblCargo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCargo.ForeColor = System.Drawing.Color.Black;
-            this.lblCargo.Location = new System.Drawing.Point(602, 113);
+            this.lblCargo.Location = new System.Drawing.Point(592, 114);
             this.lblCargo.Name = "lblCargo";
             this.lblCargo.Size = new System.Drawing.Size(47, 15);
             this.lblCargo.TabIndex = 28;
@@ -256,9 +278,9 @@
             // 
             this.cmbCargo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Location = new System.Drawing.Point(605, 131);
+            this.cmbCargo.Location = new System.Drawing.Point(595, 132);
             this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(148, 21);
+            this.cmbCargo.Size = new System.Drawing.Size(175, 21);
             this.cmbCargo.TabIndex = 27;
             // 
             // gpAtivo
@@ -314,7 +336,7 @@
             this.lblCpf.AutoSize = true;
             this.lblCpf.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.ForeColor = System.Drawing.Color.Black;
-            this.lblCpf.Location = new System.Drawing.Point(489, 10);
+            this.lblCpf.Location = new System.Drawing.Point(489, 14);
             this.lblCpf.Name = "lblCpf";
             this.lblCpf.Size = new System.Drawing.Size(34, 15);
             this.lblCpf.TabIndex = 7;
@@ -324,7 +346,7 @@
             // 
             this.txbCodigoBarras.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbCodigoBarras.Location = new System.Drawing.Point(80, 31);
+            this.txbCodigoBarras.Location = new System.Drawing.Point(76, 31);
             this.txbCodigoBarras.Name = "txbCodigoBarras";
             this.txbCodigoBarras.Size = new System.Drawing.Size(283, 20);
             this.txbCodigoBarras.TabIndex = 5;
@@ -336,21 +358,11 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(77, 10);
+            this.lblNome.Location = new System.Drawing.Point(76, 16);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(45, 15);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome";
-            // 
-            // cmbDepartamento
-            // 
-            this.cmbDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmbDepartamento.FormattingEnabled = true;
-            this.cmbDepartamento.Location = new System.Drawing.Point(604, 83);
-            this.cmbDepartamento.Name = "cmbDepartamento";
-            this.cmbDepartamento.Size = new System.Drawing.Size(149, 21);
-            this.cmbDepartamento.TabIndex = 38;
-            this.cmbDepartamento.SelectedIndexChanged += new System.EventHandler(this.cmbDepartamento_SelectedIndexChanged);
             // 
             // gbEndereco
             // 
@@ -375,13 +387,14 @@
             this.gbEndereco.Size = new System.Drawing.Size(776, 111);
             this.gbEndereco.TabIndex = 5;
             this.gbEndereco.TabStop = false;
+            this.gbEndereco.Enter += new System.EventHandler(this.gbEndereco_Enter);
             // 
             // txbNumero
             // 
             this.txbNumero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbNumero.Location = new System.Drawing.Point(615, 34);
+            this.txbNumero.Location = new System.Drawing.Point(634, 34);
             this.txbNumero.Name = "txbNumero";
-            this.txbNumero.Size = new System.Drawing.Size(142, 20);
+            this.txbNumero.Size = new System.Drawing.Size(136, 20);
             this.txbNumero.TabIndex = 19;
             // 
             // lblNumero
@@ -390,7 +403,7 @@
             this.lblNumero.AutoSize = true;
             this.lblNumero.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.ForeColor = System.Drawing.Color.Black;
-            this.lblNumero.Location = new System.Drawing.Point(612, 16);
+            this.lblNumero.Location = new System.Drawing.Point(634, 16);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(59, 15);
             this.lblNumero.TabIndex = 18;
@@ -399,9 +412,9 @@
             // txbComplemento
             // 
             this.txbComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbComplemento.Location = new System.Drawing.Point(535, 84);
+            this.txbComplemento.Location = new System.Drawing.Point(492, 85);
             this.txbComplemento.Name = "txbComplemento";
-            this.txbComplemento.Size = new System.Drawing.Size(204, 20);
+            this.txbComplemento.Size = new System.Drawing.Size(278, 20);
             this.txbComplemento.TabIndex = 17;
             // 
             // lblComplemento
@@ -410,7 +423,7 @@
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblComplemento.ForeColor = System.Drawing.Color.Black;
-            this.lblComplemento.Location = new System.Drawing.Point(532, 66);
+            this.lblComplemento.Location = new System.Drawing.Point(491, 67);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(98, 15);
             this.lblComplemento.TabIndex = 16;
@@ -419,7 +432,7 @@
             // txbEstado
             // 
             this.txbEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbEstado.Location = new System.Drawing.Point(407, 84);
+            this.txbEstado.Location = new System.Drawing.Point(350, 85);
             this.txbEstado.Name = "txbEstado";
             this.txbEstado.Size = new System.Drawing.Size(105, 20);
             this.txbEstado.TabIndex = 15;
@@ -430,7 +443,7 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.Black;
-            this.lblEstado.Location = new System.Drawing.Point(404, 66);
+            this.lblEstado.Location = new System.Drawing.Point(347, 67);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(52, 15);
             this.lblEstado.TabIndex = 14;
@@ -441,7 +454,7 @@
             this.txbCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbCidade.Location = new System.Drawing.Point(211, 84);
             this.txbCidade.Name = "txbCidade";
-            this.txbCidade.Size = new System.Drawing.Size(180, 20);
+            this.txbCidade.Size = new System.Drawing.Size(119, 20);
             this.txbCidade.TabIndex = 13;
             // 
             // lblCidade
@@ -482,7 +495,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbRua.Location = new System.Drawing.Point(149, 34);
             this.txbRua.Name = "txbRua";
-            this.txbRua.Size = new System.Drawing.Size(457, 20);
+            this.txbRua.Size = new System.Drawing.Size(440, 20);
             this.txbRua.TabIndex = 9;
             // 
             // lblRua
@@ -566,7 +579,7 @@
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.White;
             this.dgvColaborador.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvColaborador.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvColaborador.Size = new System.Drawing.Size(776, 132);
+            this.dgvColaborador.Size = new System.Drawing.Size(776, 128);
             this.dgvColaborador.TabIndex = 25;
             // 
             // Column1
@@ -650,18 +663,6 @@
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdicionar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(601, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 15);
-            this.label1.TabIndex = 39;
-            this.label1.Text = "Departamento";
             // 
             // frmColaborador
             // 

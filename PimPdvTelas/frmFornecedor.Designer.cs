@@ -47,6 +47,8 @@
             this.txbCep = new System.Windows.Forms.TextBox();
             this.lblCep = new System.Windows.Forms.Label();
             this.gbDadosForncedor = new System.Windows.Forms.GroupBox();
+            this.txbId = new System.Windows.Forms.TextBox();
+            this.lblId = new System.Windows.Forms.Label();
             this.rbFornecedorInativo = new System.Windows.Forms.RadioButton();
             this.rbFornecedorAtivo = new System.Windows.Forms.RadioButton();
             this.lblCnpj = new System.Windows.Forms.Label();
@@ -66,8 +68,6 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.txbId = new System.Windows.Forms.TextBox();
-            this.lblId = new System.Windows.Forms.Label();
             this.gbEndereco.SuspendLayout();
             this.gbDadosForncedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFornecedor)).BeginInit();
@@ -120,9 +120,9 @@
             // txbComplemento
             // 
             this.txbComplemento.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbComplemento.Location = new System.Drawing.Point(583, 84);
+            this.txbComplemento.Location = new System.Drawing.Point(555, 84);
             this.txbComplemento.Name = "txbComplemento";
-            this.txbComplemento.Size = new System.Drawing.Size(204, 20);
+            this.txbComplemento.Size = new System.Drawing.Size(250, 20);
             this.txbComplemento.TabIndex = 17;
             // 
             // lblComplemento
@@ -131,7 +131,7 @@
             this.lblComplemento.AutoSize = true;
             this.lblComplemento.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblComplemento.ForeColor = System.Drawing.Color.Black;
-            this.lblComplemento.Location = new System.Drawing.Point(580, 66);
+            this.lblComplemento.Location = new System.Drawing.Point(552, 66);
             this.lblComplemento.Name = "lblComplemento";
             this.lblComplemento.Size = new System.Drawing.Size(98, 15);
             this.lblComplemento.TabIndex = 16;
@@ -140,7 +140,7 @@
             // txbEstado
             // 
             this.txbEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbEstado.Location = new System.Drawing.Point(455, 84);
+            this.txbEstado.Location = new System.Drawing.Point(423, 84);
             this.txbEstado.Name = "txbEstado";
             this.txbEstado.Size = new System.Drawing.Size(105, 20);
             this.txbEstado.TabIndex = 15;
@@ -151,7 +151,7 @@
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.ForeColor = System.Drawing.Color.Black;
-            this.lblEstado.Location = new System.Drawing.Point(452, 66);
+            this.lblEstado.Location = new System.Drawing.Point(420, 66);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(52, 15);
             this.lblEstado.TabIndex = 14;
@@ -162,7 +162,7 @@
             this.txbCidade.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbCidade.Location = new System.Drawing.Point(259, 84);
             this.txbCidade.Name = "txbCidade";
-            this.txbCidade.Size = new System.Drawing.Size(180, 20);
+            this.txbCidade.Size = new System.Drawing.Size(113, 20);
             this.txbCidade.TabIndex = 13;
             // 
             // lblCidade
@@ -201,7 +201,7 @@
             // 
             this.txbRua.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbRua.Location = new System.Drawing.Point(197, 34);
+            this.txbRua.Location = new System.Drawing.Point(190, 34);
             this.txbRua.Name = "txbRua";
             this.txbRua.Size = new System.Drawing.Size(457, 20);
             this.txbRua.TabIndex = 9;
@@ -213,7 +213,7 @@
             this.lblRua.AutoSize = true;
             this.lblRua.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRua.ForeColor = System.Drawing.Color.Black;
-            this.lblRua.Location = new System.Drawing.Point(194, 16);
+            this.lblRua.Location = new System.Drawing.Point(187, 16);
             this.lblRua.Name = "lblRua";
             this.lblRua.Size = new System.Drawing.Size(32, 15);
             this.lblRua.TabIndex = 8;
@@ -257,12 +257,30 @@
             this.gbDadosForncedor.TabIndex = 7;
             this.gbDadosForncedor.TabStop = false;
             // 
+            // txbId
+            // 
+            this.txbId.Location = new System.Drawing.Point(8, 33);
+            this.txbId.Name = "txbId";
+            this.txbId.Size = new System.Drawing.Size(54, 20);
+            this.txbId.TabIndex = 43;
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblId.ForeColor = System.Drawing.Color.Black;
+            this.lblId.Location = new System.Drawing.Point(6, 15);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(21, 15);
+            this.lblId.TabIndex = 42;
+            this.lblId.Text = "ID";
+            // 
             // rbFornecedorInativo
             // 
             this.rbFornecedorInativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbFornecedorInativo.AutoSize = true;
             this.rbFornecedorInativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFornecedorInativo.Location = new System.Drawing.Point(586, 87);
+            this.rbFornecedorInativo.Location = new System.Drawing.Point(654, 88);
             this.rbFornecedorInativo.Name = "rbFornecedorInativo";
             this.rbFornecedorInativo.Size = new System.Drawing.Size(151, 19);
             this.rbFornecedorInativo.TabIndex = 31;
@@ -275,7 +293,7 @@
             this.rbFornecedorAtivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbFornecedorAtivo.AutoSize = true;
             this.rbFornecedorAtivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbFornecedorAtivo.Location = new System.Drawing.Point(388, 87);
+            this.rbFornecedorAtivo.Location = new System.Drawing.Point(423, 88);
             this.rbFornecedorAtivo.Name = "rbFornecedorAtivo";
             this.rbFornecedorAtivo.Size = new System.Drawing.Size(137, 19);
             this.rbFornecedorAtivo.TabIndex = 30;
@@ -310,7 +328,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbNomeFantasia.Location = new System.Drawing.Point(74, 34);
             this.txbNomeFantasia.Name = "txbNomeFantasia";
-            this.txbNomeFantasia.Size = new System.Drawing.Size(722, 20);
+            this.txbNomeFantasia.Size = new System.Drawing.Size(731, 20);
             this.txbNomeFantasia.TabIndex = 11;
             // 
             // lblNomeFantasia
@@ -331,7 +349,7 @@
             // 
             this.txbInscricaoEstadual.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbInscricaoEstadual.Location = new System.Drawing.Point(15, 87);
+            this.txbInscricaoEstadual.Location = new System.Drawing.Point(9, 87);
             this.txbInscricaoEstadual.Name = "txbInscricaoEstadual";
             this.txbInscricaoEstadual.Size = new System.Drawing.Size(183, 20);
             this.txbInscricaoEstadual.TabIndex = 9;
@@ -341,7 +359,7 @@
             this.lblInscricaoEstadual.AutoSize = true;
             this.lblInscricaoEstadual.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblInscricaoEstadual.ForeColor = System.Drawing.Color.Black;
-            this.lblInscricaoEstadual.Location = new System.Drawing.Point(15, 69);
+            this.lblInscricaoEstadual.Location = new System.Drawing.Point(6, 69);
             this.lblInscricaoEstadual.Name = "lblInscricaoEstadual";
             this.lblInscricaoEstadual.Size = new System.Drawing.Size(128, 15);
             this.lblInscricaoEstadual.TabIndex = 8;
@@ -418,7 +436,7 @@
             this.Column7});
             this.dgvFornecedor.EnableHeadersVisualStyles = false;
             this.dgvFornecedor.GridColor = System.Drawing.Color.Yellow;
-            this.dgvFornecedor.Location = new System.Drawing.Point(19, 323);
+            this.dgvFornecedor.Location = new System.Drawing.Point(21, 323);
             this.dgvFornecedor.Name = "dgvFornecedor";
             this.dgvFornecedor.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -437,7 +455,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dgvFornecedor.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvFornecedor.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFornecedor.Size = new System.Drawing.Size(846, 187);
+            this.dgvFornecedor.Size = new System.Drawing.Size(824, 187);
             this.dgvFornecedor.TabIndex = 28;
             // 
             // Column1
@@ -481,24 +499,6 @@
             this.Column7.HeaderText = "Column7";
             this.Column7.Name = "Column7";
             this.Column7.Width = 87;
-            // 
-            // txbId
-            // 
-            this.txbId.Location = new System.Drawing.Point(8, 33);
-            this.txbId.Name = "txbId";
-            this.txbId.Size = new System.Drawing.Size(54, 20);
-            this.txbId.TabIndex = 43;
-            // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.ForeColor = System.Drawing.Color.Black;
-            this.lblId.Location = new System.Drawing.Point(6, 15);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(21, 15);
-            this.lblId.TabIndex = 42;
-            this.lblId.Text = "ID";
             // 
             // frmFornecedor
             // 

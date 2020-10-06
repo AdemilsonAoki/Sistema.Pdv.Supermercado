@@ -69,10 +69,12 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txbQuantidadeEstoque = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.gpCategoria.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCodBarras
@@ -90,7 +92,7 @@
             // 
             this.txbCodigoBarras.Location = new System.Drawing.Point(24, 38);
             this.txbCodigoBarras.Name = "txbCodigoBarras";
-            this.txbCodigoBarras.Size = new System.Drawing.Size(174, 20);
+            this.txbCodigoBarras.Size = new System.Drawing.Size(191, 20);
             this.txbCodigoBarras.TabIndex = 1;
             // 
             // lblFornecedor
@@ -111,7 +113,7 @@
             this.cmbFornecedor.FormattingEnabled = true;
             this.cmbFornecedor.Location = new System.Drawing.Point(298, 36);
             this.cmbFornecedor.Name = "cmbFornecedor";
-            this.cmbFornecedor.Size = new System.Drawing.Size(251, 21);
+            this.cmbFornecedor.Size = new System.Drawing.Size(268, 21);
             this.cmbFornecedor.TabIndex = 4;
             // 
             // groupBox1
@@ -122,7 +124,7 @@
             this.groupBox1.Controls.Add(this.txbNome);
             this.groupBox1.Location = new System.Drawing.Point(24, 79);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(542, 158);
+            this.groupBox1.Size = new System.Drawing.Size(542, 173);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -141,7 +143,7 @@
             // 
             this.rtbDescricao.Location = new System.Drawing.Point(6, 75);
             this.rtbDescricao.Name = "rtbDescricao";
-            this.rtbDescricao.Size = new System.Drawing.Size(519, 68);
+            this.rtbDescricao.Size = new System.Drawing.Size(519, 92);
             this.rtbDescricao.TabIndex = 13;
             this.rtbDescricao.Text = "";
             // 
@@ -172,7 +174,7 @@
             this.btnGerarCodBarras.IconColor = System.Drawing.Color.Black;
             this.btnGerarCodBarras.IconSize = 65;
             this.btnGerarCodBarras.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnGerarCodBarras.Location = new System.Drawing.Point(204, 36);
+            this.btnGerarCodBarras.Location = new System.Drawing.Point(221, 36);
             this.btnGerarCodBarras.Name = "btnGerarCodBarras";
             this.btnGerarCodBarras.Rotation = 0D;
             this.btnGerarCodBarras.Size = new System.Drawing.Size(59, 23);
@@ -185,9 +187,9 @@
             this.gpCategoria.Controls.Add(this.rbNaoPerecivel);
             this.gpCategoria.Controls.Add(this.rbPerecivel);
             this.gpCategoria.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpCategoria.Location = new System.Drawing.Point(570, 4);
+            this.gpCategoria.Location = new System.Drawing.Point(580, 4);
             this.gpCategoria.Name = "gpCategoria";
-            this.gpCategoria.Size = new System.Drawing.Size(149, 69);
+            this.gpCategoria.Size = new System.Drawing.Size(125, 69);
             this.gpCategoria.TabIndex = 10;
             this.gpCategoria.TabStop = false;
             // 
@@ -225,7 +227,7 @@
             this.groupBox2.Controls.Add(this.lblPrecoCusto);
             this.groupBox2.Location = new System.Drawing.Point(580, 79);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(258, 158);
+            this.groupBox2.Size = new System.Drawing.Size(276, 173);
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
@@ -235,7 +237,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMargemDeLucro.Location = new System.Drawing.Point(9, 84);
             this.txbMargemDeLucro.Name = "txbMargemDeLucro";
-            this.txbMargemDeLucro.Size = new System.Drawing.Size(224, 20);
+            this.txbMargemDeLucro.Size = new System.Drawing.Size(242, 20);
             this.txbMargemDeLucro.TabIndex = 7;
             // 
             // label6
@@ -255,7 +257,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPrecoDeVenda.Location = new System.Drawing.Point(9, 134);
             this.txbPrecoDeVenda.Name = "txbPrecoDeVenda";
-            this.txbPrecoDeVenda.Size = new System.Drawing.Size(224, 20);
+            this.txbPrecoDeVenda.Size = new System.Drawing.Size(242, 20);
             this.txbPrecoDeVenda.TabIndex = 5;
             // 
             // label5
@@ -275,7 +277,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPrecoCusto.Location = new System.Drawing.Point(9, 34);
             this.txbPrecoCusto.Name = "txbPrecoCusto";
-            this.txbPrecoCusto.Size = new System.Drawing.Size(224, 20);
+            this.txbPrecoCusto.Size = new System.Drawing.Size(242, 20);
             this.txbPrecoCusto.TabIndex = 3;
             // 
             // lblPrecoCusto
@@ -292,7 +294,7 @@
             // dtpDataFabricacao
             // 
             this.dtpDataFabricacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataFabricacao.Location = new System.Drawing.Point(24, 258);
+            this.dtpDataFabricacao.Location = new System.Drawing.Point(24, 273);
             this.dtpDataFabricacao.Name = "dtpDataFabricacao";
             this.dtpDataFabricacao.Size = new System.Drawing.Size(131, 20);
             this.dtpDataFabricacao.TabIndex = 12;
@@ -300,7 +302,7 @@
             // dtpDataVencimento
             // 
             this.dtpDataVencimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataVencimento.Location = new System.Drawing.Point(188, 258);
+            this.dtpDataVencimento.Location = new System.Drawing.Point(188, 273);
             this.dtpDataVencimento.Name = "dtpDataVencimento";
             this.dtpDataVencimento.Size = new System.Drawing.Size(131, 20);
             this.dtpDataVencimento.TabIndex = 13;
@@ -310,7 +312,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(21, 240);
+            this.label7.Location = new System.Drawing.Point(21, 255);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 15);
             this.label7.TabIndex = 14;
@@ -321,7 +323,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(185, 240);
+            this.label8.Location = new System.Drawing.Point(185, 255);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 15);
             this.label8.TabIndex = 15;
@@ -339,7 +341,7 @@
             this.btnAlterar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAlterar.IconSize = 32;
             this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAlterar.Location = new System.Drawing.Point(725, 243);
+            this.btnAlterar.Location = new System.Drawing.Point(725, 258);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Rotation = 0D;
             this.btnAlterar.Size = new System.Drawing.Size(106, 35);
@@ -360,7 +362,7 @@
             this.btnAdicionar.IconColor = System.Drawing.Color.Green;
             this.btnAdicionar.IconSize = 32;
             this.btnAdicionar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAdicionar.Location = new System.Drawing.Point(592, 243);
+            this.btnAdicionar.Location = new System.Drawing.Point(592, 258);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Rotation = 0D;
             this.btnAdicionar.Size = new System.Drawing.Size(127, 35);
@@ -374,7 +376,7 @@
             this.rbProdutoInativo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbProdutoInativo.AutoSize = true;
             this.rbProdutoInativo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbProdutoInativo.Location = new System.Drawing.Point(728, 44);
+            this.rbProdutoInativo.Location = new System.Drawing.Point(15, 40);
             this.rbProdutoInativo.Name = "rbProdutoInativo";
             this.rbProdutoInativo.Size = new System.Drawing.Size(124, 19);
             this.rbProdutoInativo.TabIndex = 23;
@@ -387,7 +389,7 @@
             this.rbProdutoAtivo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.rbProdutoAtivo.AutoSize = true;
             this.rbProdutoAtivo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbProdutoAtivo.Location = new System.Drawing.Point(729, 12);
+            this.rbProdutoAtivo.Location = new System.Drawing.Point(14, 14);
             this.rbProdutoAtivo.Name = "rbProdutoAtivo";
             this.rbProdutoAtivo.Size = new System.Drawing.Size(113, 19);
             this.rbProdutoAtivo.TabIndex = 22;
@@ -426,7 +428,7 @@
             this.Column7});
             this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.Yellow;
-            this.dataGridView1.Location = new System.Drawing.Point(20, 293);
+            this.dataGridView1.Location = new System.Drawing.Point(20, 302);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -445,7 +447,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(818, 217);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 212);
             this.dataGridView1.TabIndex = 24;
             // 
             // Column1
@@ -494,7 +496,7 @@
             // 
             this.txbQuantidadeEstoque.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbQuantidadeEstoque.Location = new System.Drawing.Point(353, 258);
+            this.txbQuantidadeEstoque.Location = new System.Drawing.Point(353, 273);
             this.txbQuantidadeEstoque.Name = "txbQuantidadeEstoque";
             this.txbQuantidadeEstoque.Size = new System.Drawing.Size(213, 20);
             this.txbQuantidadeEstoque.TabIndex = 25;
@@ -504,11 +506,23 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(350, 240);
+            this.label9.Location = new System.Drawing.Point(350, 255);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(160, 15);
             this.label9.TabIndex = 26;
             this.label9.Text = "Quantidade em estoque";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.rbProdutoAtivo);
+            this.groupBox3.Controls.Add(this.rbProdutoInativo);
+            this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(711, 4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(145, 69);
+            this.groupBox3.TabIndex = 11;
+            this.groupBox3.TabStop = false;
             // 
             // frmProduto
             // 
@@ -516,11 +530,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(868, 522);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txbQuantidadeEstoque);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.rbProdutoInativo);
-            this.Controls.Add(this.rbProdutoAtivo);
             this.Controls.Add(this.btnAlterar);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.label8);
@@ -545,6 +558,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,5 +605,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

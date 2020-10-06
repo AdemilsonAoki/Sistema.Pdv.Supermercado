@@ -32,6 +32,9 @@ namespace PimPdvTelas
 
         }
 
-      
+        private void gbEndereco_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

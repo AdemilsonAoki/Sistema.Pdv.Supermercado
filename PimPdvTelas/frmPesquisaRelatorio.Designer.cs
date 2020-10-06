@@ -50,7 +50,7 @@
             // 
             this.txbPesquisa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbPesquisa.Location = new System.Drawing.Point(15, 27);
+            this.txbPesquisa.Location = new System.Drawing.Point(15, 28);
             this.txbPesquisa.Name = "txbPesquisa";
             this.txbPesquisa.Size = new System.Drawing.Size(679, 20);
             this.txbPesquisa.TabIndex = 11;
@@ -74,7 +74,7 @@
             this.cmbTipoPesquisa.FormattingEnabled = true;
             this.cmbTipoPesquisa.Location = new System.Drawing.Point(706, 27);
             this.cmbTipoPesquisa.Name = "cmbTipoPesquisa";
-            this.cmbTipoPesquisa.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipoPesquisa.Size = new System.Drawing.Size(159, 21);
             this.cmbTipoPesquisa.TabIndex = 12;
             this.cmbTipoPesquisa.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
