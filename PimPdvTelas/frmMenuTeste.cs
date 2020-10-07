@@ -269,8 +269,6 @@ namespace PimPdvTelas
 
 
             ActivateButton(sender, RGBColors.color2);
-            pnHorizontal.BackColor = RGBColors.color7;
-
            // lblNomeForms.Text = produto;
            
       
@@ -302,7 +300,7 @@ namespace PimPdvTelas
             showSubMenu(pnSubMenuColaborador);
 
             ActivateButton(sender, RGBColors.color3);
-            pnHorizontal.BackColor = RGBColors.color5;
+           
             //lblNomeForms.Text = colaborador;
         }
 
@@ -334,7 +332,7 @@ namespace PimPdvTelas
             showSubMenu(pnSubMenuRelatorio);
 
             ActivateButton(sender, RGBColors.color5);
-            pnHorizontal.BackColor = RGBColors.color5;
+           
            // lblNomeForms.Text = relatorio;
 
         }
@@ -344,7 +342,7 @@ namespace PimPdvTelas
             showSubMenu(pnSubMenuFornecedor);
 
             ActivateButton(sender, RGBColors.color4);
-            pnHorizontal.BackColor = RGBColors.color5;
+           
            // lblNomeForms.Text = fornecedor;
         }
 
@@ -374,6 +372,11 @@ namespace PimPdvTelas
             MudaCorIcone(RGBColors.color6);
 
 
+
+        }
+
+        private void pnForm_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

@@ -17,7 +17,7 @@ namespace PimPdvTelas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmColaborador());
+            Application.Run(new frmFornecedor());
         }
     }
 }

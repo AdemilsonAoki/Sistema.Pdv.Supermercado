@@ -549,6 +549,7 @@
             this.pnForm.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pnForm.Size = new System.Drawing.Size(884, 561);
             this.pnForm.TabIndex = 4;
+            this.pnForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnForm_Paint);
             // 
             // frmMenuTeste
             // 

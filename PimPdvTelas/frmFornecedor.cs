@@ -12,9 +12,12 @@ namespace PimPdvTelas
 {
     public partial class frmFornecedor : Form
     {
+        Conexao conexao = new Conexao();
         public frmFornecedor()
         {
             InitializeComponent();
+            dgvFornecedor.DataSource = conexao.ListarColaborador();
+
         }
     }
 }
