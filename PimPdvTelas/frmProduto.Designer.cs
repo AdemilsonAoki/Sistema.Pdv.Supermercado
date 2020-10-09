@@ -332,6 +332,7 @@
             // btnAlterar
             // 
             this.btnAlterar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAlterar.BackColor = System.Drawing.Color.Azure;
             this.btnAlterar.FlatAppearance.BorderSize = 0;
             this.btnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAlterar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -341,18 +342,19 @@
             this.btnAlterar.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAlterar.IconSize = 32;
             this.btnAlterar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAlterar.Location = new System.Drawing.Point(725, 258);
+            this.btnAlterar.Location = new System.Drawing.Point(729, 258);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Rotation = 0D;
-            this.btnAlterar.Size = new System.Drawing.Size(106, 35);
+            this.btnAlterar.Size = new System.Drawing.Size(127, 35);
             this.btnAlterar.TabIndex = 20;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.UseVisualStyleBackColor = false;
             // 
             // btnAdicionar
             // 
             this.btnAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdicionar.BackColor = System.Drawing.Color.Azure;
             this.btnAdicionar.FlatAppearance.BorderSize = 0;
             this.btnAdicionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdicionar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -362,14 +364,14 @@
             this.btnAdicionar.IconColor = System.Drawing.Color.Green;
             this.btnAdicionar.IconSize = 32;
             this.btnAdicionar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAdicionar.Location = new System.Drawing.Point(592, 258);
+            this.btnAdicionar.Location = new System.Drawing.Point(580, 258);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Rotation = 0D;
             this.btnAdicionar.Size = new System.Drawing.Size(127, 35);
             this.btnAdicionar.TabIndex = 19;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.UseVisualStyleBackColor = false;
             // 
             // rbProdutoInativo
             // 
@@ -404,7 +406,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -427,7 +429,7 @@
             this.Column6,
             this.Column7});
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.Yellow;
+            this.dataGridView1.GridColor = System.Drawing.Color.SandyBrown;
             this.dataGridView1.Location = new System.Drawing.Point(20, 302);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -447,7 +449,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(818, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(836, 212);
             this.dataGridView1.TabIndex = 24;
             // 
             // Column1
@@ -498,7 +500,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbQuantidadeEstoque.Location = new System.Drawing.Point(353, 273);
             this.txbQuantidadeEstoque.Name = "txbQuantidadeEstoque";
-            this.txbQuantidadeEstoque.Size = new System.Drawing.Size(213, 20);
+            this.txbQuantidadeEstoque.Size = new System.Drawing.Size(196, 20);
             this.txbQuantidadeEstoque.TabIndex = 25;
             // 
             // label9
@@ -528,7 +530,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(868, 522);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label9);

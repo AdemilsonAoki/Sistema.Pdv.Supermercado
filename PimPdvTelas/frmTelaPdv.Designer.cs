@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txbTroco = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -67,24 +65,6 @@
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txbTroco
-            // 
-            this.txbTroco.Location = new System.Drawing.Point(507, 358);
-            this.txbTroco.Multiline = true;
-            this.txbTroco.Name = "txbTroco";
-            this.txbTroco.Size = new System.Drawing.Size(196, 38);
-            this.txbTroco.TabIndex = 55;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(514, 342);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 14);
-            this.label8.TabIndex = 60;
-            this.label8.Text = "TROCO";
             // 
             // label7
             // 
@@ -131,7 +111,7 @@
             this.txbTotalRecebido.Location = new System.Drawing.Point(306, 358);
             this.txbTotalRecebido.Multiline = true;
             this.txbTotalRecebido.Name = "txbTotalRecebido";
-            this.txbTotalRecebido.Size = new System.Drawing.Size(195, 38);
+            this.txbTotalRecebido.Size = new System.Drawing.Size(130, 38);
             this.txbTotalRecebido.TabIndex = 54;
             // 
             // txbPrecoUnit
@@ -139,7 +119,7 @@
             this.txbPrecoUnit.Location = new System.Drawing.Point(306, 293);
             this.txbPrecoUnit.Multiline = true;
             this.txbPrecoUnit.Name = "txbPrecoUnit";
-            this.txbPrecoUnit.Size = new System.Drawing.Size(263, 36);
+            this.txbPrecoUnit.Size = new System.Drawing.Size(130, 36);
             this.txbPrecoUnit.TabIndex = 53;
             // 
             // txbQuantidade
@@ -147,7 +127,7 @@
             this.txbQuantidade.Location = new System.Drawing.Point(306, 233);
             this.txbQuantidade.Multiline = true;
             this.txbQuantidade.Name = "txbQuantidade";
-            this.txbQuantidade.Size = new System.Drawing.Size(263, 36);
+            this.txbQuantidade.Size = new System.Drawing.Size(130, 36);
             this.txbQuantidade.TabIndex = 52;
             // 
             // txbCodBarras
@@ -179,7 +159,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label11);
             this.panel4.Controls.Add(this.label10);
@@ -242,7 +222,7 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Location = new System.Drawing.Point(709, 253);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(211, 143);
+            this.panel3.Size = new System.Drawing.Size(211, 145);
             this.panel3.TabIndex = 47;
             // 
             // label13
@@ -258,6 +238,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.Info;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button6.Location = new System.Drawing.Point(3, 103);
             this.button6.Name = "button6";
@@ -269,6 +250,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.Info;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button5.Location = new System.Drawing.Point(3, 61);
             this.button5.Name = "button5";
@@ -280,6 +262,7 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.Info;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button4.Location = new System.Drawing.Point(106, 103);
             this.button4.Name = "button4";
@@ -291,6 +274,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Info;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button3.Location = new System.Drawing.Point(106, 19);
             this.button3.Name = "button3";
@@ -302,6 +286,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Info;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button2.Location = new System.Drawing.Point(106, 61);
             this.button2.Name = "button2";
@@ -313,6 +298,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Info;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.button1.Location = new System.Drawing.Point(3, 19);
             this.button1.Name = "button1";
@@ -335,7 +321,7 @@
             // 
             this.txbSubtotal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txbSubtotal.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
-            this.txbSubtotal.Location = new System.Drawing.Point(11, 358);
+            this.txbSubtotal.Location = new System.Drawing.Point(11, 360);
             this.txbSubtotal.Multiline = true;
             this.txbSubtotal.Name = "txbSubtotal";
             this.txbSubtotal.Size = new System.Drawing.Size(289, 38);
@@ -345,7 +331,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(11, 60);
             this.panel2.Name = "panel2";
@@ -365,7 +351,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(11, 9);
             this.panel1.Name = "panel1";
@@ -386,9 +372,9 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 94);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(289, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(289, 271);
             this.dataGridView1.TabIndex = 42;
             // 
             // frmTelaPdv
@@ -396,11 +382,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(933, 450);
-            this.Controls.Add(this.txbTroco);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txbSubtotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -414,7 +399,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txbSubtotal);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
@@ -439,9 +423,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txbTroco;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
